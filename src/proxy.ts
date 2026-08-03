@@ -23,10 +23,15 @@ function isNextRoute(pathname: string) {
 export async function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
-  // On Vercel the static WordPress site is in public/ — rewrite extensionless
-  // directory-style paths to their index.htm equivalents so Vercel's CDN serves them.
-  // Locally, server.js handles this before Next.js ever sees the request.
-  if (process.env.VERCEL && !isNextRoute(pathname) && !/\.[^/]+$/.test(pathname)) {
+  // On Vercel the static WordPress site lives in public/.
+  // Locally, server.js handles all of this before Next.js sees the request.
+  if (process.env.VERCEL && !isNextRoute(pathname)) {
+    if (/\.[^/]+$/.test(pathname)) {
+      // Path has a file extension (CSS, JS, images, fonts…) → static asset in
+      // public/, serve it directly without any auth check.
+      return NextResponse.next()
+    }
+    // Extensionless directory-style path → rewrite to its index.htm equivalent.
     const normalized = pathname.endsWith('/') ? pathname : pathname + '/'
     const url = request.nextUrl.clone()
     url.pathname = normalized + 'index.htm'
