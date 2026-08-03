@@ -523,28 +523,8 @@ Stonebridge Common, Saskatoon, SK.					</p>
 
   <!-- ── Consultation Fee ── -->
   <div style="background:#fffbeb;border:1.5px solid #fcd34d;border-radius:6px;padding:14px 16px;">
-    <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:6px;">Consultation Fee &mdash; $35 CAD</div>
-    <p style="font-size:12px;color:#78350f;margin:0 0 10px;">A $35 CAD fee is required to book your consultation with a licensed RCIC. You may pay now via e-transfer or when our agent contacts you.</p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <label style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#0B1C3A;">
-        <input type="radio" name="paymentMethod" value="pay_now" id="gih-pay-now"> Pay now via e-transfer
-      </label>
-      <label style="cursor:pointer;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#0B1C3A;">
-        <input type="radio" name="paymentMethod" value="pay_later" checked id="gih-pay-later"> Pay when agent contacts me
-      </label>
-    </div>
-  </div>
-
-  <!-- ── Receipt Upload (shown only when "pay now" is selected) ── -->
-  <div id="gih-receipt-section" style="display:none;background:#f0fdf4;border:1.5px solid #86efac;border-radius:6px;padding:14px 16px;">
-    <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:6px;">Submit E-Transfer Receipt</div>
-    <p style="font-size:12px;color:#166534;margin:0 0 10px;">
-      Send $35 CAD via e-transfer to <strong>globalimmigrationhub.ca@gmail.com</strong>, then upload your receipt below.
-    </p>
-    <label style="display:block;font-size:12px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Receipt (PDF, JPG or PNG &mdash; max 5 MB)</label>
-    <input type="file" id="gih-receipt-file" accept="application/pdf,image/jpeg,image/png"
-      style="width:100%;font-size:13px;padding:8px 10px;border:1.5px solid #86efac;border-radius:4px;box-sizing:border-box;background:#fff;">
-    <div id="gih-receipt-err" style="display:none;color:#991b1b;font-size:12px;margin-top:4px;"></div>
+    <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:4px;">Consultation Fee &mdash; $35 CAD</div>
+    <p style="font-size:12px;color:#78350f;margin:0;">Your agent will contact you to confirm your appointment and arrange payment.</p>
   </div>
 
   <div id="gih-consult-msg" style="display:none;padding:10px 14px;border-radius:4px;font-size:13px;font-weight:600;"></div>
@@ -586,11 +566,7 @@ Stonebridge Common, Saskatoon, SK.					</p>
   var filingPrice = document.getElementById('gih-filing-price');
   var tierFull    = document.getElementById('gih-tier-full');
   var tierFiling  = document.getElementById('gih-tier-filing');
-  var payNow      = document.getElementById('gih-pay-now');
-  var payLater    = document.getElementById('gih-pay-later');
-  var receiptSec  = document.getElementById('gih-receipt-section');
-  var receiptFile = document.getElementById('gih-receipt-file');
-  var receiptErr  = document.getElementById('gih-receipt-err');
+
   if (!form) return;
 
   // ── Update fee display ─────────────────────────────────────────────────────
@@ -636,15 +612,9 @@ Stonebridge Common, Saskatoon, SK.					</p>
     updateFees();
   }
 
-  // ── Receipt section toggle ─────────────────────────────────────────────────
-  function updatePayment() {
-    receiptSec.style.display = payNow.checked ? 'block' : 'none';
-  }
-
   if (topicEl)   topicEl.addEventListener('change', updateFees);
   form.addEventListener('change', function(e) {
     if (e.target.name === 'serviceTier') updateTierStyle();
-    if (e.target.name === 'paymentMethod') updatePayment();
   });
 
   updateFees();
@@ -653,20 +623,6 @@ Stonebridge Common, Saskatoon, SK.					</p>
   // ── Form submit ────────────────────────────────────────────────────────────
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    receiptErr.style.display = 'none';
-
-    // Validate receipt if pay_now selected
-    if (payNow.checked && (!receiptFile.files || !receiptFile.files[0])) {
-      receiptErr.style.display = 'block';
-      receiptErr.textContent   = 'Please upload your e-transfer receipt.';
-      return;
-    }
-    if (receiptFile.files && receiptFile.files[0] && receiptFile.files[0].size > 5 * 1024 * 1024) {
-      receiptErr.style.display = 'block';
-      receiptErr.textContent   = 'Receipt file must be under 5 MB.';
-      return;
-    }
-
     btn.disabled    = true;
     btn.textContent = 'Sending\u2026';
 
@@ -689,7 +645,6 @@ Stonebridge Common, Saskatoon, SK.					</p>
           msg.textContent      = 'Thank you! We will be in touch within 1 business day.';
           form.reset();
           feeBox.style.display    = 'none';
-          receiptSec.style.display = 'none';
         } else {
           throw new Error(res.error || 'Submission failed');
         }
@@ -706,17 +661,7 @@ Stonebridge Common, Saskatoon, SK.					</p>
       });
     }
 
-    if (payNow.checked && receiptFile.files && receiptFile.files[0]) {
-      var file   = receiptFile.files[0];
-      var reader = new FileReader();
-      reader.onload = function(ev) {
-        var b64 = ev.target.result.split(',')[1];
-        doSubmit({ receiptBase64: b64, receiptMimeType: file.type, receiptFileName: file.name });
-      };
-      reader.readAsDataURL(file);
-    } else {
-      doSubmit({});
-    }
+    doSubmit({});
   });
 })();
 </script>

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1C3A;
+  --color-gold: #C9A84C;
+  --color-surface: #F8F7F4;
+  --color-border: rgba(11, 28, 58, 0.1);
+
+  --font-sans: var(--font-poppins), 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-navy);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(11, 28, 58, 0.15);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(11, 28, 58, 0.3);
+  }
+}
+
+/* Tailwind utility helpers */
+.text-navy { color: var(--color-navy); }
+.text-gold { color: var(--color-gold); }
+.bg-navy { background-color: var(--color-navy); }
+.bg-gold { background-color: var(--color-gold); }
+.bg-surface { background-color: var(--color-surface); }
+.border-navy\/10 { border-color: rgba(11, 28, 58, 0.1); }
+.border-navy\/20 { border-color: rgba(11, 28, 58, 0.2); }
+.ring-gold { --tw-ring-color: var(--color-gold); }
+.focus\:ring-gold:focus { --tw-ring-color: var(--color-gold); }
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slide-in 0.25s ease-out forwards;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover card lift */
+.hover\:-translate-y-1:hover {
+  transform: translateY(-4px);
+}
+
+/* Transition helpers */
+.transition-all {
+  transition: all 0.2s ease;
+}
+.transition-colors {
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+.transition-transform {
+  transition: transform 0.15s ease;
+}
+.transition-opacity {
+  transition: opacity 0.15s ease;
+}
+.transition-shadow {
+  transition: box-shadow 0.2s ease;
+}
