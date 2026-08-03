@@ -24,6 +24,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  @media (max-width: 640px) {
+    html {
+      font-size: 80%;
+    }
+  }
+
   body {
     background-color: var(--color-surface);
     color: var(--color-navy);
