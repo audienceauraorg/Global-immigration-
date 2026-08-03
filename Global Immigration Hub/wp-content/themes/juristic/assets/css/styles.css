@@ -2779,7 +2779,7 @@ img {
 
 @media (max-width: 991px) {
   .hero-style-1 .container {
-    padding-top: 90px;
+    padding-top: 0;
   }
 }
 
@@ -8524,6 +8524,21 @@ html {
 }
 @media (max-width: 450px) {
   .hero-style-1 .slide-title h2 { font-size: 28px !important; }
+}
+
+/* Push hero content below fixed header (topbar ~50px + nav ~100px) */
+.hero-style-1 .slide-inner,
+.hero-style-1 .hero-inner {
+  padding-top: 160px;
+  align-items: flex-start;
+}
+
+@media (max-width: 991px) {
+  .hero-style-1 .slide-inner,
+  .hero-style-1 .hero-inner {
+    padding-top: 110px;
+    align-items: center;
+  }
 }
 
 /* Inner page title */
