@@ -8526,11 +8526,13 @@ html {
   .hero-style-1 .slide-title h2 { font-size: 28px !important; }
 }
 
-/* Shift hero content up so buttons clear the bottom pagination bar (z-index: 2) */
+/* Position hero content: below fixed header, above bottom pagination bar */
 @media screen and (min-width: 992px) {
   .hero-style-1 .slide-inner,
   .hero-style-1 .hero-inner {
-    padding-bottom: 150px;
+    align-items: flex-start;
+    padding-top: 170px;
+    padding-bottom: 160px;
   }
 }
 
