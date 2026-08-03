@@ -2777,6 +2777,12 @@ img {
   }
 }
 
+@media (max-width: 991px) {
+  .hero-style-1 .container {
+    padding-top: 90px;
+  }
+}
+
 .hero-style-1 .video-btns {
   position: absolute;
   right: 15px;
