@@ -1,0 +1,1800 @@
+Uri: https://fonts.googleapis.com/css?family=Muli:400%2C600%2C700|Roboto+Slab:300%2C400%2C500%2C600%26display%3Dswap&ver=1.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=auto&ver=7.0.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\css-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/muli/v34/7Aulp_0qiz-aVz7u3PJLcUMYOFkpl0k30e0.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\muli\v34\7Aulp_0qiz-aVz7u3PJLcUMYOFkpl0k30e0.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/muli/v34/7Aulp_0qiz-aVz7u3PJLcUMYOFkQl0k30e0.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\muli\v34\7Aulp_0qiz-aVz7u3PJLcUMYOFkQl0k30e0.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/muli/v34/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\muli\v34\7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://js.stripe.com/v3/?ver=3.2.11
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\v3\index.htm
+Content Type: text/javascript
+
+Uri: https://rsms.me/inter/font-files/Inter-Black.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Black.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-BlackItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-BlackItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-Bold.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Bold.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-BoldItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-BoldItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-ExtraBold.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-ExtraBold.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-ExtraBoldItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-ExtraBoldItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-ExtraLight.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-ExtraLight.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-ExtraLightItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-ExtraLightItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-Italic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Italic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-Light.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Light.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-LightItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-LightItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-Medium.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Medium.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-MediumItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-MediumItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-Regular.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Regular.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-SemiBold.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-SemiBoldItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-SemiBoldItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-Thin.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-Thin.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/Inter-ThinItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\Inter-ThinItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Black.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Black.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-BlackItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-BlackItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Bold.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Bold.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-BoldItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-BoldItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-ExtraBold.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-ExtraBold.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-ExtraBoldItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-ExtraBoldItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-ExtraLight.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-ExtraLight.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-ExtraLightItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-ExtraLightItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Italic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Italic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Light.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Light.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-LightItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-LightItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Medium.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Medium.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-MediumItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-MediumItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Regular.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Regular.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-SemiBold.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-SemiBold.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-SemiBoldItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-SemiBoldItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-Thin.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-Thin.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterDisplay-ThinItalic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterDisplay-ThinItalic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterVariable-Italic.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterVariable-Italic.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\font-files\InterVariable.woff2
+Content Type: font/woff2
+
+Uri: https://rsms.me/inter/inter.css
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\inter\inter.css
+Content Type: text/css
+
+Uri: https://www.facebook.com/tr?id=335164100848558&ev=PageView&noscript=1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\tr
+Content Type: text/plain
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-175460340-1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\gtag\js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/book-consult/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\book-consult\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/employers/faqs/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\employers\faqs\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/employers/our-expertise/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\employers\our-expertise\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/employers/resources-guides-forms/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\employers\resources-guides-forms\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/feed/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://www.theimmigrationdepot.ca/individuals/faqs/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\faqs\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/international-skilled-worker-category/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\international-skilled-worker-category\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/our-expertise/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\our-expertise\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/permanent-resident-process/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\permanent-resident-process\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/saskatchewan-experience-category/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\saskatchewan-experience-category\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/sinp-saskatchewan-immigration-nominee-program/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\sinp-saskatchewan-immigration-nominee-program\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/spousal-sponsorship/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\spousal-sponsorship\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/study-in-canada/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\study-in-canada\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/individuals/temporary-resident-work-permits/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\individuals\temporary-resident-work-permits\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/job-seekers/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\job-seekers\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/faqs/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\faqs\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/glossary-of-terms/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\glossary-of-terms\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/mobile-notary-service/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\mobile-notary-service\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/other-services/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\other-services\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/seminar-consultations/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\seminar-consultations\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/services/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\services\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-services/translation_services/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-services\translation_services\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-team/meet-our-team/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-team\meet-our-team\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/our-team/testimonials/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\our-team\testimonials\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/privacypolicy/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\privacypolicy\index.htm
+Content Type: text/html
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/css/flows/default.css?ver=3.2.11
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\css\flows\default.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/fonts/icomoon.eot?mpbzbb
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\fonts\icomoon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/fonts/icomoon.svg?mpbzbb
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\fonts\icomoon.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/fonts/icomoon.ttf?mpbzbb
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\fonts\icomoon.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/fonts/icomoon.woff?mpbzbb
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\fonts\icomoon.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/images/bg-info-message.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\images\bg-info-message.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/images/confetti.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\images\confetti.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/images/loader.gif
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\images\loader.gif
+Content Type: image/gif
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/calendar-booking/public/js/flows/default-appointment.js?ver=3.2.11
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\calendar-booking\public\js\flows\default-appointment.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\contact-form-7\includes\css\styles.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\contact-form-7\includes\js\index.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\contact-form-7\includes\swv\js\index.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\css\frontend-legacy.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\css\frontend.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\js\frontend-modules.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\js\frontend.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\js\preloaded-modules.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\js\webpack.runtime.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\animations\animations.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\dialog\dialog.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.12.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\css\elementor-icons.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.12.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.12.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons-1.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.12.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons-1.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.12.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons-1.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.12.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons-1.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\css\fontawesome.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\css\regular.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\css\solid.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.svg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.4.4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\share-link\share-link.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\swiper\swiper.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\elementor\assets\lib\waypoints\waypoints.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/juristic-core/assets/plugin-scripts.js?ver=7.0.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\juristic-core\assets\plugin-scripts.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/juristic-core/elementor/assets/css/juristic-elementor.css?ver=1.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\juristic-core\elementor\assets\css\juristic-elementor.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/juristic-core/elementor/assets/js/juristic-elementor.js?ver=7.0.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\juristic-core\elementor\assets\js\juristic-elementor.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\page-links-to\dist\new-tab.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/css/ajax-loader.gif
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\css\ajax-loader.gif
+Content Type: image/gif
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/css/font-awesome.min.css?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/css/magnific-popup.css?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\css\magnific-popup.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/css/slick.css?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\css\slick.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/css/testimonials-style.css?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\css\testimonials-style.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/css/video-js.css?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\css\video-js.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/fonts/fontawesome-webfont.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/fonts/fontawesome-webfont.eot?v=4.6.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/fonts/fontawesome-webfont.svg?v=4.6.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/fonts/fontawesome-webfont.ttf?v=4.6.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\fonts\fontawesome-webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/fonts/fontawesome-webfont.woff2?v=4.6.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/fonts/fontawesome-webfont.woff?v=4.6.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/images/video-play-icon.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\images\video-play-icon.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/js/magnific-popup.min.js?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\js\magnific-popup.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/js/rtsw-public.js?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\js\rtsw-public.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/js/slick.min.js?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\js\slick.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/plugins/wp-responsive-testimonials-slider-and-widget/assets/js/video.js?ver=1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\plugins\wp-responsive-testimonials-slider-and-widget\assets\js\video.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/animate.css?ver=3.5.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\animate.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/bootstrap.min.css?ver=3.3.7
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/elements.css?ver=1.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\elements.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/fancybox.css?ver=2.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\fancybox.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/flaticon.css?ver=1.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\flaticon.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/odometer.css?ver=0.4.8
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\odometer.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/owl.carousel.css?ver=2.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\owl.carousel.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/owl.theme.css?ver=2.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\owl.theme.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/owl.transitions.css?ver=2.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\owl.transitions.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/responsive.css?ver=1.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\responsive.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/slick-theme.css?ver=1.6.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\slick-theme.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/slick.css?ver=1.6.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\slick.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/styles.css?ver=1.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\styles.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/swiper.min.css?ver=4.0.7
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\swiper.min.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/css/themify-icons.css?ver=4.6.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\css\themify-icons.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/Flaticon.eot
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\Flaticon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/Flaticon.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\Flaticon-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/Flaticon.svg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\Flaticon.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/Flaticon.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\Flaticon.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/Flaticon.woff
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\Flaticon.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/Flaticon.woff2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\Flaticon.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/glyphicons-halflings-regular.eot
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\glyphicons-halflings-regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/glyphicons-halflings-regular.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\glyphicons-halflings-regular-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/glyphicons-halflings-regular.svg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\glyphicons-halflings-regular.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/glyphicons-halflings-regular.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\glyphicons-halflings-regular.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/glyphicons-halflings-regular.woff
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\glyphicons-halflings-regular.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/glyphicons-halflings-regular.woff2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\glyphicons-halflings-regular.woff2
+Content Type: font/woff2
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/slick.eot
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\slick.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/slick.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\slick-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/slick.svg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\slick.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/slick.ttf
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\slick.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/slick.woff
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\slick.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/themify.eot?
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\themify-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/themify.eot?-fvbane
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\themify.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/themify.svg?-fvbane
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\themify.svg
+Content Type: image/svg+xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/themify.ttf?-fvbane
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\themify.ttf
+Content Type: application/octet-stream
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/fonts/themify.woff?-fvbane
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\fonts\themify.woff
+Content Type: font/woff
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/ajax-loader.gif
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\ajax-loader.gif
+Content Type: image/gif
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/fancybox/blank.gif
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\fancybox\blank.gif
+Content Type: image/gif
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/fancybox/fancybox_loading.gif
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\fancybox\fancybox_loading.gif
+Content Type: image/gif
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/fancybox/fancybox_loading@2x.gif
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\fancybox\fancybox_loading@2x.gif
+Content Type: image/gif
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/fancybox/fancybox_overlay.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\fancybox\fancybox_overlay.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/fancybox/fancybox_sprite.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\fancybox\fancybox_sprite.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/fancybox/fancybox_sprite@2x.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\fancybox\fancybox_sprite@2x.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/images/page-title.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\images\page-title.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/bootstrap.min.js?ver=3.3.7
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/fancybox.min.js?ver=2.1.5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\fancybox.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/isotope.min.js?ver=2.2.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\isotope.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/jquery-easing.js?ver=1.4.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\jquery-easing.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/jquery.validate.min.js?ver=1.9.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\jquery.validate.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/magnific-popup.js?ver=1.1.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\magnific-popup.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/odometer.min.js?ver=0.4.8
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\odometer.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/owl-carousel.js?ver=2.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\owl-carousel.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/scripts.js?ver=1.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\scripts.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/slick-slider.js?ver=1.6.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\slick-slider.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/wc-quantity-increment.js?ver=1.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\wc-quantity-increment.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/assets/js/wow.min.js?ver=1.4.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\assets\js\wow.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/themes/juristic/style.css?ver=7.0.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\themes\juristic\style.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/01/home_faqs.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\01\home_faqs.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/01/home_notary.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\01\home_notary.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/01/home_seminars.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\01\home_seminars.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/01/home_services.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\01\home_services.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/01/home_translation.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\01\home_translation.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/airplane_bg.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\airplane_bg.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/expertise_banner.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\expertise_banner.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/expertise_main_pic-300x179.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\expertise_main_pic-300x179.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/expertise_main_pic-768x459.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\expertise_main_pic-768x459.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/expertise_main_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\expertise_main_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/home_about_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\home_about_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/iccrc_block-300x72.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\iccrc_block-300x72.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/iccrc_block.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\iccrc_block.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/logo_dark-300x82.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\logo_dark-300x82.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/logo_dark.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\logo_dark.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/logo_transparent.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\logo_transparent.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/06/video_button.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\06\video_button.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/allan.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\allan.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/amir.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\amir.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Aqib_Ashiq.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Aqib_Ashiq.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Ashish_Mahat.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Ashish_Mahat.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Carol_Dsouza.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Carol_Dsouza.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/contact_header.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\contact_header.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/cropped-ImmigrationDepot_favicon_32x32-180x180.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\cropped-ImmigrationDepot_favicon_32x32-180x180.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/cropped-ImmigrationDepot_favicon_32x32-192x192.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\cropped-ImmigrationDepot_favicon_32x32-192x192.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/cropped-ImmigrationDepot_favicon_32x32-32x32.png
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\cropped-ImmigrationDepot_favicon_32x32-32x32.png
+Content Type: image/png
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Deepak_Karki.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Deepak_Karki.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Dibas_Dahal.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Dibas_Dahal.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Fay_Baran.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Fay_Baran.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/glossary_pic-300x181.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\glossary_pic-300x181.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/glossary_pic-768x463.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\glossary_pic-768x463.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/glossary_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\glossary_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Henry_Li.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Henry_Li.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/iccrc_logo.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\iccrc_logo.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/individuals_header.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\individuals_header.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/indv_our_expertise-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\indv_our_expertise-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/indv_our_expertise-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\indv_our_expertise-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/indv_our_expertise.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\indv_our_expertise.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/job_seekers_header.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\job_seekers_header.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/loradel.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\loradel.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/lorna.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\lorna.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Manmeet_Sidhu.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Manmeet_Sidhu.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Marvin_Sotelo.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Marvin_Sotelo.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/mobile_notary_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\mobile_notary_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/mobile_notary_pic-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\mobile_notary_pic-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/mobile_notary_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\mobile_notary_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/morgan.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\morgan.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Omkar_Karekar.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Omkar_Karekar.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/other_services_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\other_services_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/other_services_pic-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\other_services_pic-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/other_services_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\other_services_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/our_team_header.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\our_team_header.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/perm_res_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\perm_res_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/perm_res_pic-768x460.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\perm_res_pic-768x460.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/perm_res_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\perm_res_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Rajesh_Acharya.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Rajesh_Acharya.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/resources_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\resources_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/resources_pic-768x462.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\resources_pic-768x462.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/resources_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\resources_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/sask_exp_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\sask_exp_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/sask_exp_pic-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\sask_exp_pic-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/sask_exp_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\sask_exp_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/seminar_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\seminar_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/seminar_pic-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\seminar_pic-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/seminar_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\seminar_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/services_header.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\services_header.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/services_overview_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\services_overview_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/services_overview_pic-768x462.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\services_overview_pic-768x462.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/services_overview_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\services_overview_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/sinp_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\sinp_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/sinp_pic-768x462.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\sinp_pic-768x462.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/sinp_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\sinp_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/skilled_worker_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\skilled_worker_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/skilled_worker_pic-768x460.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\skilled_worker_pic-768x460.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/skilled_worker_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\skilled_worker_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/spouse_pic-300x181.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\spouse_pic-300x181.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/spouse_pic-768x462.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\spouse_pic-768x462.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/spouse_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\spouse_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/study_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\study_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/study_pic-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\study_pic-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/study_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\study_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/Tamey_Stewart.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\Tamey_Stewart.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/temp_work_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\temp_work_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/temp_work_pic-768x461.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\temp_work_pic-768x461.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/temp_work_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\temp_work_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/translation_pic-300x180.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\translation_pic-300x180.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/translation_pic-768x462.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\translation_pic-768x462.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/2020/07/translation_pic.jpg
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\2020\07\translation_pic.jpg
+Content Type: image/jpeg
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1017.css?ver=1725990865
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1017.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1029.css?ver=1726011628
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1029.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1041.css?ver=1725993298
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1041.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1045.css?ver=1726010541
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1045.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1049.css?ver=1726024726
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1049.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1053.css?ver=1725992658
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1053.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1066.css?ver=1726011360
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1066.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1071.css?ver=1726009743
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1071.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1079.css?ver=1726011411
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1079.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1087.css?ver=1725993280
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1087.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1098.css?ver=1725997197
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1098.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1118.css?ver=1726011579
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1118.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1136.css?ver=1726011480
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1136.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1148.css?ver=1726011592
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1148.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1155.css?ver=1726011559
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1155.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1162.css?ver=1726011483
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1162.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1168.css?ver=1725998060
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1168.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1175.css?ver=1725992888
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1175.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1195.css?ver=1726005305
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1195.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-1263.css?ver=1726011473
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-1263.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-14.css?ver=1725990535
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-14.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-18.css?ver=1725990495
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-18.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-20.css?ver=1725990863
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-20.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-725.css?ver=1725990494
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-725.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-982.css?ver=1725990497
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-982.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-content/uploads/elementor/css/post-999.css?ver=1726011429
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-content\uploads\elementor\css\post-999.css
+Content Type: text/css
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\a11y.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/autop.min.js?ver=9d0d0901b46f0a9027c9
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\autop.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/blob.min.js?ver=198af75fe06d924090d8
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\blob.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/block-serialization-default-parser.min.js?ver=bff55bd3f1ce9df0c99c
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\block-serialization-default-parser.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/blocks.min.js?ver=ef38e42500165bfda301
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\blocks.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/compose.min.js?ver=fbe37f6b46750554f947
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\compose.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/data.min.js?ver=1756b6a2676c1b3369ab
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\data.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/deprecated.min.js?ver=990e85f234fee8f7d446
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\deprecated.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/dom-ready.min.js?ver=a06281ae5cf5500e9317
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\dom-ready.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/dom.min.js?ver=66a6cf58e0c4cd128af0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\dom.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/element.min.js?ver=15ba804677f72a8db97b
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\element.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/escape-html.min.js?ver=3f093e5cca67aa0f8b56
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\escape-html.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\hooks.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/html-entities.min.js?ver=8c6fa5b869dfeadc4af2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\html-entities.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\i18n.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/is-shallow-equal.min.js?ver=5d84b9f3cb50d2ce7d04
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\is-shallow-equal.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/keycodes.min.js?ver=aa1a141e3468afe7f852
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\keycodes.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/priority-queue.min.js?ver=1f0e89e247bc0bd3f9b9
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\priority-queue.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/private-apis.min.js?ver=835912f0086b9e59aed4
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\private-apis.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/redux-routine.min.js?ver=64f9f5001aabc046c605
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\redux-routine.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/rich-text.min.js?ver=16449e6108f48327f368
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\rich-text.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/shortcode.min.js?ver=11742fe18cc215d3d5ab
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\shortcode.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/undo-manager.min.js?ver=27bb0ae036a2c9d4a1b5
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\undo-manager.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\vendor\react-dom.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/vendor/react-jsx-runtime.min.js?ver=18.3.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\vendor\react-jsx-runtime.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\vendor\react.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/dist/warning.min.js?ver=36fdbdc984d93aee8a97
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\dist\warning.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/imagesloaded.min.js?ver=5.0.0
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\imagesloaded.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/jquery/jquery.min.js?ver=3.7.1
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\jquery\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\jquery\ui\core.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-includes/js/masonry.min.js?ver=4.2.2
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-includes\js\masonry.min.js
+Content Type: application/javascript
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Fbook-consult%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-2
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Fbook-consult%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-3
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Femployers%2Ffaqs%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-8
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Femployers%2Ffaqs%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-9
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Femployers%2Four-expertise%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-4
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Femployers%2Four-expertise%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-5
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Femployers%2Fresources-guides-forms%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-6
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Femployers%2Fresources-guides-forms%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-7
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Ffaqs%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-26
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Ffaqs%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-27
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Finternational-skilled-worker-category%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-14
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Finternational-skilled-worker-category%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-15
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Four-expertise%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-10
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Four-expertise%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-11
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fpermanent-resident-process%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-22
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fpermanent-resident-process%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-23
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fsaskatchewan-experience-category%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-16
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fsaskatchewan-experience-category%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-17
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fsinp-saskatchewan-immigration-nominee-program%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-12
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fsinp-saskatchewan-immigration-nominee-program%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-13
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fspousal-sponsorship%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-18
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fspousal-sponsorship%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-19
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fstudy-in-canada%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-24
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Fstudy-in-canada%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-25
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Ftemporary-resident-work-permits%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-20
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Findividuals%2Ftemporary-resident-work-permits%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-21
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Fjob-seekers%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-28
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Fjob-seekers%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-29
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Ffaqs%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-44
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Ffaqs%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-45
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fglossary-of-terms%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-46
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fglossary-of-terms%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-47
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fmobile-notary-service%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-36
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fmobile-notary-service%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-37
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fother-services%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-42
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fother-services%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-43
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fseminar-consultations%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-40
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fseminar-consultations%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-41
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fservices%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-34
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Fservices%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-35
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Ftranslation_services%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-38
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-services%2Ftranslation_services%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-39
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-team%2Fmeet-our-team%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-30
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-team%2Fmeet-our-team%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-31
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-team%2Ftestimonials%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-32
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Four-team%2Ftestimonials%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-33
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Fprivacypolicy%2F
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-48
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/oembed/1.0/embed?url=https:%2F%2Fwww.theimmigrationdepot.ca%2Fprivacypolicy%2F&format=xml
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\oembed\1.0\embed-49
+Content Type: text/xml
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1017
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1017
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1029
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1029
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1041
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1041
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1045
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1045
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1049
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1049
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1053
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1053
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1066
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1066
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1071
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1071
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1079
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1079
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1087
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1087
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1098
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1098
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1118
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1118
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1136
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1136
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1148
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1148
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1155
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1155
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1162
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1162
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1168
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1168
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1175
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1175
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1195
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1195
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/1263
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\1263
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/14
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\14
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/18
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\18
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/20
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\20
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/982
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\982
+Content Type: application/json
+
+Uri: https://www.theimmigrationdepot.ca/wp-json/wp/v2/pages/999
+File Name: C:\Downloaded Web Sites\www.theimmigrationdepot.ca\wp-json\wp\v2\pages\999
+Content Type: application/json
+

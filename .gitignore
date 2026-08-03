@@ -1,0 +1,8 @@
+# Next.js
+global-immigration-hub/.next/
+global-immigration-hub/node_modules/
+global-immigration-hub/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
