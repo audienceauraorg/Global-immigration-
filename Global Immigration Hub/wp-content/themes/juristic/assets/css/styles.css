@@ -8526,12 +8526,6 @@ html {
   .hero-style-1 .slide-title h2 { font-size: 28px !important; }
 }
 
-/* Nudge hero centre point down to account for fixed header */
-.hero-style-1 .slide-inner,
-.hero-style-1 .hero-inner {
-  padding-top: 80px;
-}
-
 /* Inner page title */
 .page-title h2 {
   font-size: 38px !important;
