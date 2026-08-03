@@ -36,10 +36,10 @@ export default async function SiteFooter() {
   return (
     <footer className="bg-navy text-white">
       {/* Main footer grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
 
         {/* Brand column */}
-        <div className="lg:col-span-1">
+        <div className="col-span-2 lg:col-span-1">
           <div className="flex items-center gap-3 mb-4">
             <div
               className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
