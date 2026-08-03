@@ -157,7 +157,11 @@ export default async function SiteFooter() {
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
-            <Link href="/signup" className="text-gold/60 hover:text-gold transition-colors font-medium">
+            <Link
+              href="/signup"
+              className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg font-semibold text-navy transition-all hover:opacity-90"
+              style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)', fontSize: '11px' }}
+            >
               Enroll Now →
             </Link>
           </div>
