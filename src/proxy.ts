@@ -1,12 +1,48 @@
 import { auth } from '@/auth'
 import { NextResponse, type NextRequest } from 'next/server'
 
+// Routes handled by Next.js — everything else is the static WordPress site
+const NEXT_PREFIXES = [
+  '/_next',
+  '/api',
+  '/auth',
+  '/login',
+  '/signup',
+  '/dashboard',
+  '/admin',
+  '/fees',
+  '/favicon.ico',
+]
+
+function isNextRoute(pathname: string) {
+  return NEXT_PREFIXES.some(
+    p => pathname === p || pathname.startsWith(p + '/') || pathname.startsWith(p + '?')
+  )
+}
+
 export async function proxy(request: NextRequest) {
-  const session = await auth()
   const pathname = request.nextUrl.pathname
 
-  // Public auth paths
-  if (pathname.startsWith('/login') || pathname.startsWith('/signup') || pathname.startsWith('/api/auth') || pathname.startsWith('/unauthorized')) {
+  // On Vercel the static WordPress site is in public/ — rewrite extensionless
+  // directory-style paths to their index.htm equivalents so Vercel's CDN serves them.
+  // Locally, server.js handles this before Next.js ever sees the request.
+  if (process.env.VERCEL && !isNextRoute(pathname) && !/\.[^/]+$/.test(pathname)) {
+    const normalized = pathname.endsWith('/') ? pathname : pathname + '/'
+    const url = request.nextUrl.clone()
+    url.pathname = normalized + 'index.htm'
+    return NextResponse.rewrite(url)
+  }
+
+  // ── Auth proxy for Next.js-handled routes ─────────────────────────────────
+  const session = await auth()
+
+  // Public auth paths — always allow
+  if (
+    pathname.startsWith('/login') ||
+    pathname.startsWith('/signup') ||
+    pathname.startsWith('/api/auth') ||
+    pathname.startsWith('/unauthorized')
+  ) {
     return NextResponse.next()
   }
 
@@ -19,13 +55,6 @@ export async function proxy(request: NextRequest) {
 
   const role = session.user.role ?? 'client'
 
-  // Root path redirect by role
-  if (pathname === '/') {
-    const url = request.nextUrl.clone()
-    url.pathname = role === 'client' ? '/dashboard' : '/admin/dashboard'
-    return NextResponse.redirect(url)
-  }
-
   // Admin routes — clients bounced to portal
   if (pathname.startsWith('/admin') && !['admin', 'staff'].includes(role)) {
     const url = request.nextUrl.clone()
@@ -33,7 +62,7 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
-  // Portal routes — staff/admin sent to dashboard
+  // Portal routes — staff/admin sent to admin dashboard
   if (pathname.startsWith('/dashboard') && ['admin', 'staff'].includes(role)) {
     const url = request.nextUrl.clone()
     url.pathname = '/admin/dashboard'
