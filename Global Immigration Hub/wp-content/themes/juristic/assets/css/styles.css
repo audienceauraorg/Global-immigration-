@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap');
 
 /*------------------------------------------------------------------
 [Master Stylesheet]
@@ -144,8 +144,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: "Quicksand", "Poppins", sans-serif;
+  font-weight: 600;
   color: #262b3e;
 }
 
@@ -2707,30 +2707,30 @@ img {
 }
 
 .hero-style-1 .slide-title h2 {
-  font-size: 65px;
-  font-size: 4.0625rem;
+  font-size: 48px;
+  font-size: 3rem;
   color: #fff;
   margin: 0 0 0.61em;
 }
 
 @media (max-width: 991px) {
   .hero-style-1 .slide-title h2 {
-    font-size: 55px;
-    font-size: 3.4375rem;
+    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 767px) {
   .hero-style-1 .slide-title h2 {
-    font-size: 45px;
-    font-size: 2.8125rem;
+    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 450px) {
   .hero-style-1 .slide-title h2 {
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
