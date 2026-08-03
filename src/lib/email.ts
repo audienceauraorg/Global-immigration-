@@ -157,6 +157,35 @@ export async function notifyClientWelcome(params: {
   })
 }
 
+/** Send a pre-built HTML email (used by routes that build their own templates). */
+export async function sendRaw(opts: {
+  to: string | string[]
+  subject: string
+  html: string
+  replyTo?: string
+  attachments?: Array<{ filename: string; content: Buffer }>
+}) {
+  const transporter = getTransporter()
+  if (!transporter) return
+
+  const { fromName, fromAddr } = await getEmailSettings()
+  const recipients = Array.isArray(opts.to) ? opts.to : [opts.to]
+  if (recipients.length === 0) return
+
+  try {
+    await transporter.sendMail({
+      from: `"${fromName}" <${fromAddr}>`,
+      to: recipients.join(', '),
+      subject: opts.subject,
+      html: opts.html,
+      ...(opts.replyTo && { replyTo: opts.replyTo }),
+      ...(opts.attachments?.length && { attachments: opts.attachments }),
+    })
+  } catch (err) {
+    console.error('[email] Failed to send "%s":', opts.subject, err)
+  }
+}
+
 /** Notify client that a document was approved or rejected. */
 export async function notifyClientDocumentStatus(params: {
   clientEmail: string

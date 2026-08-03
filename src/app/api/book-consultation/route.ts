@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Resend } from 'resend'
 import { connectDB } from '@/lib/mongodb'
 import { SiteSettings, User, ConsultationBooking } from '@/lib/db/models'
 import {
@@ -9,12 +8,7 @@ import {
   fmt,
   type ProgramKey,
 } from '@/lib/fees'
-
-function getResend(): Resend | null {
-  const key = process.env.RESEND_API_KEY
-  if (!key) return null
-  return new Resend(key)
-}
+import { sendRaw } from '@/lib/email'
 
 export async function POST(req: NextRequest) {
   try {
@@ -33,10 +27,8 @@ export async function POST(req: NextRequest) {
     }
 
     await connectDB()
-    const settings = await SiteSettings.findOne().lean()
-    const fromName = settings?.emailFromName ?? 'Global Immigration Hub'
-    const fromAddr = settings?.emailFromAddr ?? 'onboarding@resend.dev'
-    const siteName = settings?.siteName ?? 'Global Immigration Hub'
+    const settings  = await SiteSettings.findOne().lean()
+    const siteName  = settings?.siteName ?? 'Global Immigration Hub'
 
     // ── Store booking record ──────────────────────────────────────────────────
     const booking = await ConsultationBooking.create({
@@ -47,28 +39,24 @@ export async function POST(req: NextRequest) {
       preferredTime,
       topic,
       message,
-      serviceTier:    serviceTier || null,
+      serviceTier:     serviceTier || null,
       consultationFee: CONSULTATION_FEE,
-      paymentMethod:  paymentMethod === 'pay_now' ? 'pay_now' : 'pay_later',
-      paymentStatus:  paymentMethod === 'pay_now' && receiptBase64 ? 'received' : 'pending',
-      receiptEmailed: !!(paymentMethod === 'pay_now' && receiptBase64),
+      paymentMethod:   paymentMethod === 'pay_now' ? 'pay_now' : 'pay_later',
+      paymentStatus:   paymentMethod === 'pay_now' && receiptBase64 ? 'received' : 'pending',
+      receiptEmailed:  !!(paymentMethod === 'pay_now' && receiptBase64),
       receiptFileName: receiptFileName || null,
     })
-
-    const resend = getResend()
-    if (!resend) {
-      console.warn('[book-consultation] RESEND_API_KEY not set — skipping email')
-      return NextResponse.json({ ok: true, bookingId: booking._id })
-    }
 
     // ── Get admin recipients ──────────────────────────────────────────────────
     const staff = await User.find({ role: { $in: ['admin', 'staff'] } }).select('email').lean()
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const adminEmails: string[] = staff.map((u: any) => u.email).filter(Boolean)
-    if (adminEmails.length === 0) adminEmails.push(fromAddr)
+    if (adminEmails.length === 0) {
+      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'globalimmigrationhub.ca@gmail.com')
+    }
 
     // ── Build fee context ─────────────────────────────────────────────────────
-    const programKey = topic as ProgramKey
+    const programKey    = topic as ProgramKey
     const officialEntry = OFFICIAL_FEES[programKey]
     const agencyEntry   = AGENCY_FEES[programKey]
 
@@ -96,7 +84,7 @@ export async function POST(req: NextRequest) {
         ? officialEntry.total + agencyFeeAmt
         : null
 
-    const payLabel    = paymentMethod === 'pay_now' ? 'Paying now — receipt submitted' : 'Will pay when contacted'
+    const payLabel = paymentMethod === 'pay_now' ? 'Paying now — receipt submitted' : 'Will pay when contacted'
 
     // ── Build admin HTML email ────────────────────────────────────────────────
     const html = `
@@ -137,8 +125,7 @@ export async function POST(req: NextRequest) {
     `
 
     // ── Build attachments (receipt if provided) ───────────────────────────────
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const attachments: any[] = []
+    const attachments: Array<{ filename: string; content: Buffer }> = []
     if (receiptBase64 && receiptMimeType) {
       const ext = receiptFileName?.split('.').pop() ?? (receiptMimeType.includes('pdf') ? 'pdf' : 'jpg')
       attachments.push({
@@ -147,8 +134,7 @@ export async function POST(req: NextRequest) {
       })
     }
 
-    await resend.emails.send({
-      from:        `${fromName} <${fromAddr}>`,
+    await sendRaw({
       to:          adminEmails,
       replyTo:     email,
       subject:     `Consultation Request: ${topic} — ${name}${paymentMethod === 'pay_now' ? ' [Receipt Attached]' : ''}`,
@@ -166,9 +152,9 @@ export async function POST(req: NextRequest) {
 // ── Admin: list all consultation bookings ─────────────────────────────────────
 export async function GET(req: NextRequest) {
   try {
-    // Quick auth check — only admin/staff can list bookings
     const { auth } = await import('@/auth')
     const session = await auth()
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (!session?.user || !['admin', 'staff'].includes((session.user as any).role)) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
