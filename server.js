@@ -10,8 +10,8 @@ const dev      = process.env.NODE_ENV !== 'production'
 const port     = parseInt(process.env.PORT || '3000', 10)
 const hostname = 'localhost'
 
-// Old static WordPress site lives one level above this Next.js project
-const OLD_SITE_DIR = path.resolve(__dirname, '..', 'Global Immigration Hub')
+// Static WordPress site lives alongside server.js at the repo root
+const OLD_SITE_DIR = path.resolve(__dirname, 'Global Immigration Hub')
 
 // Routes that must be handled by Next.js
 const NEXT_PREFIXES = [

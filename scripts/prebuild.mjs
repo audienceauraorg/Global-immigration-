@@ -15,8 +15,8 @@ import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectRoot = resolve(__dirname, '..')
 
-// The static site lives one level above the Next.js project in the monorepo
-const src  = resolve(projectRoot, '..', 'Global Immigration Hub')
+// Static site lives at the repo root alongside the Next.js project
+const src  = resolve(projectRoot, 'Global Immigration Hub')
 const dest = resolve(projectRoot, 'public')
 
 if (!existsSync(src)) {
