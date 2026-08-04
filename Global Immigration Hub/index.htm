@@ -245,56 +245,48 @@ fbq('track', 'PageView');
 
 .elementor-accordion-icon-opened i:before {color: #fff !important;}
 
-/* ── Standalone pagination bar (below hero) ── */
+/* ── Static category tab bar (below hero) ── */
 .gih-slide-tabs {
   width: 100%;
   background: #fff;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  display: flex;
   position: relative;
   z-index: 10;
 }
-.gih-slide-tabs .swiper-cust-pagination {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.gih-slide-tabs .swiper-cust-pagination > div + div {
-  border-left: 1px solid #dedede;
-}
-.gih-slide-tabs .swiper-pagination-bullet {
+.gih-tab {
   flex: 1;
-  text-align: left;
-  padding: 28px 15px 28px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 22px 15px 22px 72px;
   position: relative;
-  cursor: pointer;
-  opacity: 0.55;
-  margin: 0 !important;
-  transition: opacity 0.2s, background 0.2s;
+  text-decoration: none;
+  color: #262b3e;
+  border-left: 1px solid #dedede;
+  transition: background 0.2s;
 }
-.gih-slide-tabs .swiper-pagination-bullet i {
+.gih-tab:first-child { border-left: none; }
+.gih-tab:hover { background: #f9f5ed; text-decoration: none; }
+.gih-tab i {
   position: absolute;
-  left: 22px;
+  left: 18px;
   top: 50%;
   transform: translateY(-50%);
-  color: #262b3e;
+  font-size: 32px;
+  color: #c9a84c;
 }
-.gih-slide-tabs .swiper-pagination-bullet i:before { font-size: 38px; }
-.gih-slide-tabs .swiper-pagination-bullet h4 {
+.gih-tab span {
   font-size: 15px;
-  font-weight: 400;
-  margin: 0.2em 0 0;
+  font-weight: 700;
   color: #262b3e;
+  display: block;
 }
-.gih-slide-tabs .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #c9a84c;
-}
-.gih-slide-tabs .swiper-pagination-bullet-active h4,
-.gih-slide-tabs .swiper-pagination-bullet-active i,
-.gih-slide-tabs .swiper-pagination-bullet-active i:before {
-  color: #fff !important;
+.gih-tab h4 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #777;
+  margin: 3px 0 0;
 }
 @media (max-width: 991px) {
   .gih-slide-tabs { display: none; }
@@ -491,11 +483,33 @@ and professionalism. </p>
           </div><!-- end swiper-slide -->						
 							</div>
 		 	<!-- swipper controls -->
+	    	    	<div class="swiper-cust-pagination" style="display:none!important"></div>
 				<div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 	        	</div>
 		</section>
-<div class="gih-slide-tabs"><div class="swiper-cust-pagination"></div></div>
+<div class="gih-slide-tabs">
+  <a class="gih-tab" href="individuals/our-expertise/index.htm">
+    <i class="far fa-user-circle"></i>
+    <span>Individuals</span>
+    <h4>Seeking Immigration</h4>
+  </a>
+  <a class="gih-tab" href="job-seekers/index.htm">
+    <i class="far fa-handshake"></i>
+    <span>Job Seekers</span>
+    <h4>Seeking Work in Canada</h4>
+  </a>
+  <a class="gih-tab" href="employers/our-expertise/index.htm">
+    <i class="fas fa-search"></i>
+    <span>Employers</span>
+    <h4>Seeking Foreign Workers</h4>
+  </a>
+  <a class="gih-tab" href="our-services/services/index.htm">
+    <i class="fas fa-globe-americas"></i>
+    <span>Our Services</span>
+    <h4>Let Us Guide You</h4>
+  </a>
+</div>
 				</div>
 				</div>
 						</div>
