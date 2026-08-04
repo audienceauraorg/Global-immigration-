@@ -2771,11 +2771,6 @@ img {
   position: relative;
 }
 
-@media screen and (min-width: 992px) {
-  .hero-style-1 .container {
-    padding-top: 77px;
-  }
-}
 
 @media (max-width: 991px) {
   .hero-style-1 .container {
@@ -3079,6 +3074,14 @@ img {
   .hero-style-2 .swiper-pagination-fraction {
     display: none;
   }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -55px;
+  left: 0;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
