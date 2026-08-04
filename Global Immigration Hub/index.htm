@@ -355,6 +355,29 @@ fbq('track', 'PageView');
 <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="book-consult/index.htm">Contact Us</a></li>
 </ul>
 </div><!-- end of nav-collapse -->
+      <div class="cart-search-contact">
+      <a href="/login" id="gih-auth-link"
+  style="display:inline-flex;align-items:center;padding:6px 15px;background:#0B1C3A;color:#C9A84C;font-size:12.5px;font-weight:700;border-radius:4px;text-decoration:none;letter-spacing:0.03em;white-space:nowrap;transition:opacity 0.2s;line-height:1.4;"
+  onmouseover="this.style.opacity='0.82'" onmouseout="this.style.opacity='1'">
+  Log In
+</a>
+<script>
+(function(){
+  var loggedIn = document.cookie.split(';').some(function(c){
+    return c.trim() === 'gih_ui=1';
+  });
+  if (loggedIn) {
+    var el = document.getElementById('gih-auth-link');
+    if (el) {
+      el.href = '/dashboard';
+      el.textContent = 'My Portal →';
+      el.style.background = '#C9A84C';
+      el.style.color = '#0B1C3A';
+    }
+  }
+})();
+</script>
+  </div>
   </div><!-- end of container -->
 
 
