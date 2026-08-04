@@ -328,11 +328,9 @@ fbq('track', 'PageView');
 </ul>
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="book-consult/index.htm">Contact Us</a></li>
+<li class="gih-mobile-cta-item"><a href="/login" class="gih-mobile-btn gih-mobile-btn-login">Client Login</a></li>
+<li class="gih-mobile-cta-item"><a href="/signup" class="gih-mobile-btn gih-mobile-btn-enroll">Enroll Now →</a></li>
 </ul>
-<div class="gih-mobile-cta">
-  <a href="/login" class="gih-mobile-btn gih-mobile-btn-login">Client Login</a>
-  <a href="/signup" class="gih-mobile-btn gih-mobile-btn-enroll">Enroll Now →</a>
-</div>
 </div><!-- end of nav-collapse -->
       <div class="cart-search-contact">
       <a href="/login" id="gih-auth-link"
@@ -1218,36 +1216,36 @@ and professionalism. </p>
 		@media (max-width: 580px) {
 			.gih-footer-grid { grid-template-columns: 1fr !important; }
 		}
-		/* Mobile sidebar CTA buttons */
-		.gih-mobile-cta {
-			display: none;
-		}
+		/* Mobile sidebar CTA buttons — inside the nav ul so they scroll with the list */
+		.gih-mobile-cta-item { display: none; }
 		@media (max-width: 991px) {
-			.gih-mobile-cta {
-				display: flex;
-				flex-direction: column;
-				gap: 10px;
-				padding: 20px 20px 10px;
-				border-top: 1px solid rgba(255,255,255,0.1);
-				margin-top: 10px;
+			.gih-mobile-cta-item {
+				display: block;
+				padding: 6px 15px;
+			}
+			.gih-mobile-cta-item:first-of-type {
+				margin-top: 12px;
+				border-top: 1px solid #eee;
+				padding-top: 16px;
 			}
 			.gih-mobile-btn {
 				display: block;
 				text-align: center;
-				padding: 12px 20px;
+				padding: 11px 20px;
 				border-radius: 8px;
 				font-weight: 700;
 				font-size: 14px;
-				text-decoration: none;
+				text-decoration: none !important;
 			}
 			.gih-mobile-btn-login {
+				border: 2px solid #C9A84C !important;
+				color: #C9A84C !important;
 				background: transparent;
-				border: 2px solid #C9A84C;
-				color: #C9A84C;
 			}
 			.gih-mobile-btn-enroll {
 				background: linear-gradient(135deg, #C9A84C, #e8c76a);
-				color: #0B1C3A;
+				color: #0B1C3A !important;
+				margin-top: 8px;
 			}
 		}
 		</style>
