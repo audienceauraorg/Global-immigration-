@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const adminEmails: string[] = staff.map((u: any) => u.email).filter(Boolean)
     if (adminEmails.length === 0) {
-      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'globalimmigrationhub.ca@gmail.com')
+      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'info@immigrationdepot.online')
     }
 
     // ── Build fee context ─────────────────────────────────────────────────────

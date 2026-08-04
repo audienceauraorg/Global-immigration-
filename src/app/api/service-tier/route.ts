@@ -102,7 +102,7 @@ export async function POST(req: NextRequest) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const adminEmails = staff.map((u: any) => u.email).filter(Boolean) as string[]
     if (adminEmails.length === 0) {
-      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'globalimmigrationhub.ca@gmail.com')
+      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'info@immigrationdepot.online')
     }
     const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'
 

@@ -14,7 +14,7 @@ export default async function ProfilePage() {
     SiteSettings.findOne().lean(),
   ])
 
-  const contactEmail = settings?.contactEmail ?? 'globalimmigrationhub.ca@gmail.com'
+  const contactEmail = settings?.contactEmail ?? 'info@immigrationdepot.online'
 
   const initials = (user?.name ?? 'C')
     .split(' ')

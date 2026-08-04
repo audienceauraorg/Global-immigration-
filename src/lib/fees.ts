@@ -6,7 +6,7 @@ export const CONSULTATION_FEE = 35
 
 /** E-transfer recipient for consultation fee payments */
 export const ETRANSFER_EMAIL =
-  process.env.ETRANSFER_EMAIL ?? process.env.CONTACT_EMAIL ?? 'globalimmigrationhub.ca@gmail.com'
+  process.env.ETRANSFER_EMAIL ?? process.env.CONTACT_EMAIL ?? 'info@immigrationdepot.online'
 
 // ─── Program keys ─────────────────────────────────────────────────────────────
 export type ProgramKey =

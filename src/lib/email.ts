@@ -42,7 +42,7 @@ async function getEmailSettings(): Promise<EmailSettings> {
   const settings = await SiteSettings.findOne().lean()
   return {
     fromName: settings?.emailFromName ?? 'Global Immigration Hub',
-    fromAddr: process.env.SMTP_FROM_ADDR ?? (settings?.contactEmail ?? 'globalimmigrationhub.ca@gmail.com'),
+    fromAddr: process.env.SMTP_FROM_ADDR ?? (settings?.contactEmail ?? 'info@immigrationdepot.online'),
     siteName: settings?.siteName ?? 'Global Immigration Hub',
     appUrl: process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
   }
