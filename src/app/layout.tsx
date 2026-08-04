@@ -39,6 +39,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             },
           }}
         />
+        {/* Floating Messenger button */}
+        <a
+          href="https://m.me/327884021233501"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with us on Messenger"
+          style={{
+            position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
+            width: '56px', height: '56px', borderRadius: '50%',
+            background: 'linear-gradient(135deg,#0084ff,#00c6ff)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 4px 16px rgba(0,132,255,0.45)', textDecoration: 'none',
+          }}
+        >
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.906 1.377 5.504 3.538 7.24V22l3.332-1.83c.89.246 1.833.378 2.13.378 5.522 0 10-4.144 10-9.305C21 6.145 17.523 2 12 2zm1.008 12.535-2.548-2.718-4.976 2.718 5.474-5.813 2.612 2.718 4.91-2.718-5.472 5.813z"/>
+          </svg>
+        </a>
       </body>
     </html>
   )
