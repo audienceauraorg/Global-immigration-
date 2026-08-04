@@ -2838,8 +2838,10 @@ img {
 }
 
 .hero-style-1 .swiper-button-next,
-.hero-style-1 .swiper-button-prev {
-  display: none;
+.hero-style-1 .swiper-button-prev,
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+  display: none !important;
 }
 
 .hero-style-1 .swiper-cust-pagination {
@@ -3074,14 +3076,6 @@ img {
   .hero-style-2 .swiper-pagination-fraction {
     display: none;
   }
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -55px;
-  left: 0;
-  width: 100%;
 }
 
 /*--------------------------------------------------------------
