@@ -328,8 +328,12 @@ fbq('track', 'PageView');
 </ul>
 </li>
 <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="book-consult/index.htm">Contact Us</a></li>
-<li class="menu-item menu-item-login" style="display:flex;align-items:center;padding-left:10px;"><a href="/login" style="background:linear-gradient(135deg,#C9A84C,#e8c76a);color:#0B1C3A;font-weight:700;font-size:13px;padding:8px 18px;border-radius:8px;white-space:nowrap;text-decoration:none;">Client Login</a></li>
-</ul>      </div><!-- end of nav-collapse -->
+</ul>
+<div class="gih-mobile-cta">
+  <a href="/login" class="gih-mobile-btn gih-mobile-btn-login">Client Login</a>
+  <a href="/signup" class="gih-mobile-btn gih-mobile-btn-enroll">Enroll Now →</a>
+</div>
+</div><!-- end of nav-collapse -->
       <div class="cart-search-contact">
       <a href="/login" id="gih-auth-link"
   style="display:inline-flex;align-items:center;padding:6px 15px;background:#0B1C3A;color:#C9A84C;font-size:12.5px;font-weight:700;border-radius:4px;text-decoration:none;letter-spacing:0.03em;white-space:nowrap;transition:opacity 0.2s;line-height:1.4;"
@@ -1212,7 +1216,39 @@ and professionalism. </p>
 			.gih-footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
 		}
 		@media (max-width: 580px) {
-			.gih-footer-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
+			.gih-footer-grid { grid-template-columns: 1fr !important; }
+		}
+		/* Mobile sidebar CTA buttons */
+		.gih-mobile-cta {
+			display: none;
+		}
+		@media (max-width: 991px) {
+			.gih-mobile-cta {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				padding: 20px 20px 10px;
+				border-top: 1px solid rgba(255,255,255,0.1);
+				margin-top: 10px;
+			}
+			.gih-mobile-btn {
+				display: block;
+				text-align: center;
+				padding: 12px 20px;
+				border-radius: 8px;
+				font-weight: 700;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			.gih-mobile-btn-login {
+				background: transparent;
+				border: 2px solid #C9A84C;
+				color: #C9A84C;
+			}
+			.gih-mobile-btn-enroll {
+				background: linear-gradient(135deg, #C9A84C, #e8c76a);
+				color: #0B1C3A;
+			}
 		}
 		</style>
 
