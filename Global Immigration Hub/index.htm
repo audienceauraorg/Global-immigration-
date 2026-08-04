@@ -241,6 +241,61 @@ fbq('track', 'PageView');
 .elementor-tab-title.elementor-active {background-color: #c47520 !important;}
 
 .elementor-accordion-icon-opened i:before {color: #fff !important;}
+
+/* ── Standalone pagination bar (below hero) ── */
+.gih-slide-tabs {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  position: relative;
+  z-index: 10;
+}
+.gih-slide-tabs .swiper-cust-pagination {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gih-slide-tabs .swiper-cust-pagination > div + div {
+  border-left: 1px solid #dedede;
+}
+.gih-slide-tabs .swiper-pagination-bullet {
+  flex: 1;
+  text-align: left;
+  padding: 28px 15px 28px 80px;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.55;
+  margin: 0 !important;
+  transition: opacity 0.2s, background 0.2s;
+}
+.gih-slide-tabs .swiper-pagination-bullet i {
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #262b3e;
+}
+.gih-slide-tabs .swiper-pagination-bullet i:before { font-size: 38px; }
+.gih-slide-tabs .swiper-pagination-bullet h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0.2em 0 0;
+  color: #262b3e;
+}
+.gih-slide-tabs .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #c9a84c;
+}
+.gih-slide-tabs .swiper-pagination-bullet-active h4,
+.gih-slide-tabs .swiper-pagination-bullet-active i,
+.gih-slide-tabs .swiper-pagination-bullet-active i:before {
+  color: #fff !important;
+}
+@media (max-width: 991px) {
+  .gih-slide-tabs { display: none; }
+}
 </style>
   <link rel='stylesheet' id='e-animations-css' href='wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.4.4' media='all'>
 
@@ -336,6 +391,11 @@ fbq('track', 'PageView');
   onmouseover="this.style.opacity='0.82'" onmouseout="this.style.opacity='1'">
   Log In
 </a>
+<a href="/signup"
+  style="display:inline-flex;align-items:center;padding:6px 14px;background:linear-gradient(135deg,#C9A84C,#e8c76a);color:#0B1C3A;font-size:12.5px;font-weight:700;border-radius:4px;text-decoration:none;letter-spacing:0.03em;white-space:nowrap;margin-left:6px;transition:opacity 0.2s;line-height:1.4;"
+  onmouseover="this.style.opacity='0.82'" onmouseout="this.style.opacity='1'">
+  Enroll Now
+</a>
 <script>
 (function(){
   var loggedIn = document.cookie.split(';').some(function(c){
@@ -428,11 +488,11 @@ and professionalism. </p>
           </div><!-- end swiper-slide -->						
 							</div>
 		 	<!-- swipper controls -->
-	    	    	<div class="swiper-cust-pagination"></div>
 				<div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 	        	</div>
 		</section>
+<div class="gih-slide-tabs"><div class="swiper-cust-pagination"></div></div>
 				</div>
 				</div>
 						</div>
