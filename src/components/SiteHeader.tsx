@@ -107,23 +107,7 @@ export default async function SiteHeader({ variant = 'public' }: SiteHeaderProps
                     </button>
                   </form>
                 </>
-              ) : (
-                <>
-                  <Link
-                    href="/login"
-                    className="px-4 py-2 rounded-xl text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-                  >
-                    Client Login
-                  </Link>
-                  <Link
-                    href="/signup"
-                    className="px-4 py-2.5 rounded-xl text-sm font-bold text-navy transition-all hover:opacity-90 shadow-lg"
-                    style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)' }}
-                  >
-                    Enroll Now →
-                  </Link>
-                </>
-              )}
+              ) : null}
             </div>
           </>
         )}

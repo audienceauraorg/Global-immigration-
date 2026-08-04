@@ -95,24 +95,7 @@ export default function MobileMenu({ isLoggedIn, role, userName, siteName, varia
                           </button>
                         </form>
                       </>
-                    ) : (
-                      <>
-                        <Link
-                          href="/login"
-                          onClick={() => setOpen(false)}
-                          className="flex items-center justify-center w-full px-4 py-3 rounded-xl border border-white/20 text-white/80 hover:text-white hover:border-white/40 text-sm font-medium transition-colors"
-                        >
-                          Client Login
-                        </Link>
-                        <Link
-                          href="/signup"
-                          onClick={() => setOpen(false)}
-                          className="flex items-center justify-center w-full px-4 py-3 rounded-xl bg-gold text-navy text-sm font-bold transition-colors hover:bg-yellow-400"
-                        >
-                          Enroll Now →
-                        </Link>
-                      </>
-                    )}
+                    ) : null}
                   </div>
                 </>
               )}
