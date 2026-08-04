@@ -41,11 +41,11 @@ export async function proxy(request: NextRequest) {
   // ── Auth proxy for Next.js-handled routes ─────────────────────────────────
   const session = await auth()
 
-  // Public auth paths — always allow
+  // Public paths — always allow (API routes handle their own auth internally)
   if (
     pathname.startsWith('/login') ||
     pathname.startsWith('/signup') ||
-    pathname.startsWith('/api/auth') ||
+    pathname.startsWith('/api/') ||
     pathname.startsWith('/unauthorized')
   ) {
     return NextResponse.next()
