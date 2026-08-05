@@ -10,9 +10,14 @@ import {
 } from '@/lib/fees'
 import { sendRaw, getAdminEmails } from '@/lib/email'
 
-// CORS headers are set globally in next.config.ts for all /api/* routes.
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+}
+
 export function OPTIONS() {
-  return new NextResponse(null, { status: 204 })
+  return new NextResponse(null, { status: 204, headers: CORS_HEADERS })
 }
 
 export async function POST(req: NextRequest) {
@@ -28,7 +33,7 @@ export async function POST(req: NextRequest) {
     } = body
 
     if (!name || !email || !phone || !topic) {
-      return NextResponse.json({ ok: false, error: 'Missing required fields' }, { status: 400 })
+      return NextResponse.json({ ok: false, error: 'Missing required fields' }, { status: 400, headers: CORS_HEADERS })
     }
 
     await connectDB()
@@ -142,10 +147,10 @@ export async function POST(req: NextRequest) {
       ...(attachments.length > 0 && { attachments }),
     })
 
-    return NextResponse.json({ ok: true, bookingId: booking._id })
+    return NextResponse.json({ ok: true, bookingId: booking._id }, { headers: CORS_HEADERS })
   } catch (err) {
     console.error('[book-consultation]', err)
-    return NextResponse.json({ ok: false, error: 'Internal error' }, { status: 500 })
+    return NextResponse.json({ ok: false, error: 'Internal error' }, { status: 500, headers: CORS_HEADERS })
   }
 }
 
