@@ -139,12 +139,49 @@ export async function POST(req: NextRequest) {
       })
     }
 
+    // ── Email admin ───────────────────────────────────────────────────────────
     await sendRaw({
       to:          adminEmails,
       replyTo:     email,
       subject:     `Consultation Request: ${topic} — ${name}${paymentMethod === 'pay_now' ? ' [Receipt Attached]' : ''}`,
       html,
       ...(attachments.length > 0 && { attachments }),
+    })
+
+    // ── Confirmation email to client ──────────────────────────────────────────
+    const clientHtml = `
+      <div style="font-family:sans-serif;max-width:600px;margin:0 auto;">
+        <div style="background:#0B1C3A;padding:20px 24px;border-radius:8px 8px 0 0;">
+          <h2 style="color:#C9A84C;margin:0;font-size:18px;">${siteName}</h2>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:28px 24px;">
+          <h3 style="color:#0B1C3A;margin:0 0 12px;">We received your consultation request!</h3>
+          <p style="color:#374151;font-size:14px;line-height:1.6;margin:0 0 16px;">
+            Hi <strong>${name}</strong>, thank you for reaching out to ${siteName}.
+            One of our licensed consultants will contact you within <strong>1 business day</strong>
+            to confirm your appointment and next steps.
+          </p>
+          <table style="width:100%;border-collapse:collapse;margin-bottom:20px;font-size:13px;">
+            <tr><td style="padding:8px 12px;font-weight:700;color:#555;width:140px;border-bottom:1px solid #eee;">Program</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${topic}</td></tr>
+            <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Service Level</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${tierLabel}</td></tr>
+            ${preferredDate ? `<tr><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Preferred Date</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${dateLabel} ${timeLabel !== '—' ? 'at ' + timeLabel : ''}</td></tr>` : ''}
+          </table>
+          <div style="background:#f0f7ff;border-left:4px solid #C9A84C;padding:14px 16px;border-radius:4px;margin-bottom:20px;">
+            <p style="margin:0;font-size:13px;color:#0B1C3A;">
+              <strong>Consultation fee: $${CONSULTATION_FEE} CAD</strong> — our team will contact you to arrange payment.
+            </p>
+          </div>
+          <p style="color:#6b7280;font-size:12px;margin:0;">
+            Questions? Reply to this email or contact us at
+            <a href="mailto:${adminEmails[0]}" style="color:#0B1C3A;">${adminEmails[0]}</a>.
+          </p>
+        </div>
+      </div>
+    `
+    await sendRaw({
+      to:      email,
+      subject: `We received your consultation request — ${siteName}`,
+      html:    clientHtml,
     })
 
     return NextResponse.json({ ok: true, bookingId: booking._id }, { headers: CORS_HEADERS })
