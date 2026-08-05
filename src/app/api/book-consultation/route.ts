@@ -92,42 +92,79 @@ export async function POST(req: NextRequest) {
     const payLabel = paymentMethod === 'pay_now' ? 'Paying now — receipt submitted' : 'Will pay when contacted'
 
     // ── Build admin HTML email ────────────────────────────────────────────────
-    const html = `
-      <div style="font-family:sans-serif;max-width:640px;margin:0 auto;">
-        <div style="background:#0B1C3A;padding:20px 24px;border-radius:8px 8px 0 0;">
-          <h2 style="color:#C9A84C;margin:0;font-size:18px;">New Consultation Request — ${siteName}</h2>
-        </div>
-        <div style="background:#fff;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:24px;">
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');</style>
+</head>
+<body style="margin:0;padding:0;background:#eef0f4;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#eef0f4;">
+<tr><td align="center" style="padding:32px 16px;">
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
 
-          <h3 style="color:#0B1C3A;margin:0 0 12px;">Contact Details</h3>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
-            <tr><td style="padding:8px 12px;font-weight:700;color:#555;width:160px;border-bottom:1px solid #eee;">Name</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${name}</td></tr>
-            <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Email</td><td style="padding:8px 12px;border-bottom:1px solid #eee;"><a href="mailto:${email}">${email}</a></td></tr>
-            <tr><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Phone</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${phone}</td></tr>
-            <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Preferred Date</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${dateLabel}</td></tr>
-            <tr><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Preferred Time</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${timeLabel}</td></tr>
-            <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;vertical-align:top;border-bottom:1px solid #eee;">Description</td><td style="padding:8px 12px;white-space:pre-wrap;border-bottom:1px solid #eee;">${message || '—'}</td></tr>
-          </table>
+  <tr>
+    <td style="background:#fff;padding:24px 40px 20px;border-radius:12px 12px 0 0;text-align:center;border-bottom:4px solid #C9A84C;">
+      <img src="https://www.immigrationdepot.online/wp-content/uploads/2020/06/logo_dark-300x82.png" alt="The Immigration Depot" width="180" style="height:auto;display:block;margin:0 auto;">
+    </td>
+  </tr>
 
-          <h3 style="color:#0B1C3A;margin:0 0 12px;">Program &amp; Service</h3>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
-            <tr><td style="padding:8px 12px;font-weight:700;color:#555;width:160px;border-bottom:1px solid #eee;">Program</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${topic}</td></tr>
-            <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Service Tier</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${tierLabel}</td></tr>
-            ${officialEntry ? `<tr><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Official Fee</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${fmt(officialEntry.total)}${officialEntry.note ? ` <span style="color:#888;font-size:12px;">(${officialEntry.note})</span>` : ''}</td></tr>` : ''}
-            ${agencyFeeAmt != null ? `<tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Agency Fee</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${fmt(agencyFeeAmt)}</td></tr>` : ''}
-            ${totalFee != null ? `<tr><td style="padding:8px 12px;font-weight:700;color:#0B1C3A;border-bottom:1px solid #eee;">Estimated Total</td><td style="padding:8px 12px;font-weight:700;color:#0B1C3A;border-bottom:1px solid #eee;">${fmt(totalFee)}</td></tr>` : ''}
-          </table>
+  <tr>
+    <td style="background:#0B1C3A;padding:22px 40px;">
+      <p style="margin:0 0 3px;font-family:'Poppins',Arial,sans-serif;font-size:18px;font-weight:700;color:#C9A84C;">New Consultation Request</p>
+      <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#94a3b8;">${siteName} &nbsp;&middot;&nbsp; ${new Date().toLocaleDateString('en-CA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+    </td>
+  </tr>
 
-          <h3 style="color:#0B1C3A;margin:0 0 12px;">Consultation Fee ($${CONSULTATION_FEE} CAD)</h3>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
-            <tr><td style="padding:8px 12px;font-weight:700;color:#555;width:160px;border-bottom:1px solid #eee;">Payment Method</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${payLabel}</td></tr>
-            ${receiptBase64 ? `<tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;">Receipt</td><td style="padding:8px 12px;color:#166534;font-weight:600;">Attached to this email ✓</td></tr>` : ''}
-          </table>
+  <tr>
+    <td style="background:#fff;padding:32px 40px;">
 
-          <p style="font-size:13px;color:#888;margin:0;">Reply directly to this email to contact the prospect.<br>Booking ID: ${booking._id}</p>
-        </div>
-      </div>
-    `
+      ${receiptBase64 ? `<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;"><tr><td style="background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:8px;padding:12px 16px;font-family:'Poppins',Arial,sans-serif;font-size:13px;font-weight:600;color:#15803d;">&#10003; Payment receipt attached &mdash; review below</td></tr></table>` : ''}
+
+      <p style="margin:0 0 10px;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#C9A84C;">Contact Details</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #e2e8f0;border-radius:8px;font-size:13px;margin-bottom:24px;">
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;width:130px;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Name</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:1px solid #f1f5f9;">${name}</td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Email</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;border-bottom:1px solid #f1f5f9;"><a href="mailto:${email}" style="color:#0B1C3A;text-decoration:none;font-weight:500;">${email}</a></td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Phone</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:1px solid #f1f5f9;">${phone}</td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Date</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:1px solid #f1f5f9;">${dateLabel}</td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:${message ? '1px solid #f1f5f9' : 'none'};background:#fafbfc;">Time</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:${message ? '1px solid #f1f5f9' : 'none'};">${timeLabel}</td></tr>
+        ${message ? `<tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;background:#fafbfc;vertical-align:top;">Notes</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;white-space:pre-wrap;">${message}</td></tr>` : ''}
+      </table>
+
+      <p style="margin:0 0 10px;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#C9A84C;">Program &amp; Service</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #e2e8f0;border-radius:8px;font-size:13px;margin-bottom:24px;">
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;width:130px;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Program</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#0B1C3A;border-bottom:1px solid #f1f5f9;">${topic}</td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:${officialEntry || agencyFeeAmt != null ? '1px solid #f1f5f9' : 'none'};background:#fafbfc;">Service Tier</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:${officialEntry || agencyFeeAmt != null ? '1px solid #f1f5f9' : 'none'};">${tierLabel}</td></tr>
+        ${officialEntry ? `<tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:${agencyFeeAmt != null ? '1px solid #f1f5f9' : 'none'};background:#fafbfc;">Official Fee</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:${agencyFeeAmt != null ? '1px solid #f1f5f9' : 'none'};">${fmt(officialEntry.total)}${officialEntry.note ? ` <span style="color:#94a3b8;font-size:11px;">(${officialEntry.note})</span>` : ''}</td></tr>` : ''}
+        ${agencyFeeAmt != null ? `<tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:${totalFee != null ? '1px solid #f1f5f9' : 'none'};background:#fafbfc;">Agency Fee</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:${totalFee != null ? '1px solid #f1f5f9' : 'none'};">${fmt(agencyFeeAmt)}</td></tr>` : ''}
+        ${totalFee != null ? `<tr><td style="padding:12px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:700;color:#0B1C3A;background:#fffbeb;">Est. Total</td><td style="padding:12px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:700;color:#b45309;font-size:14px;background:#fffbeb;">${fmt(totalFee)}</td></tr>` : ''}
+      </table>
+
+      <p style="margin:0 0 10px;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#C9A84C;">Consultation Fee</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #e2e8f0;border-radius:8px;font-size:13px;margin-bottom:28px;">
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;width:130px;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Amount</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:700;color:#0B1C3A;border-bottom:1px solid #f1f5f9;">$${CONSULTATION_FEE} CAD</td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:${receiptBase64 ? '1px solid #f1f5f9' : 'none'};background:#fafbfc;">Payment</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:${receiptBase64 ? '1px solid #f1f5f9' : 'none'};">${payLabel}</td></tr>
+        ${receiptBase64 ? `<tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;background:#fafbfc;">Receipt</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#15803d;">Attached &#10003;</td></tr>` : ''}
+      </table>
+
+      <table width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
+        <a href="mailto:${email}" style="display:inline-block;background:#0B1C3A;color:#C9A84C;font-family:'Poppins',Arial,sans-serif;font-size:13px;font-weight:600;text-decoration:none;padding:11px 28px;border-radius:6px;letter-spacing:0.3px;">Reply to ${name}</a>
+      </td></tr></table>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#f8fafc;padding:18px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e2e8f0;text-align:center;">
+      <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:11px;color:#94a3b8;">Booking ID: ${booking._id} &nbsp;&middot;&nbsp; ${siteName}</p>
+    </td>
+  </tr>
+
+</table>
+</td></tr></table>
+</body>
+</html>`
 
     // ── Build attachments (receipt if provided) ───────────────────────────────
     const attachments: Array<{ filename: string; content: Buffer }> = []
@@ -149,35 +186,90 @@ export async function POST(req: NextRequest) {
     })
 
     // ── Confirmation email to client ──────────────────────────────────────────
-    const clientHtml = `
-      <div style="font-family:sans-serif;max-width:600px;margin:0 auto;">
-        <div style="background:#0B1C3A;padding:20px 24px;border-radius:8px 8px 0 0;">
-          <h2 style="color:#C9A84C;margin:0;font-size:18px;">${siteName}</h2>
-        </div>
-        <div style="background:#fff;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:28px 24px;">
-          <h3 style="color:#0B1C3A;margin:0 0 12px;">We received your consultation request!</h3>
-          <p style="color:#374151;font-size:14px;line-height:1.6;margin:0 0 16px;">
-            Hi <strong>${name}</strong>, thank you for reaching out to ${siteName}.
-            One of our licensed consultants will contact you within <strong>1 business day</strong>
-            to confirm your appointment and next steps.
-          </p>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:20px;font-size:13px;">
-            <tr><td style="padding:8px 12px;font-weight:700;color:#555;width:140px;border-bottom:1px solid #eee;">Program</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${topic}</td></tr>
-            <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Service Level</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${tierLabel}</td></tr>
-            ${preferredDate ? `<tr><td style="padding:8px 12px;font-weight:700;color:#555;border-bottom:1px solid #eee;">Preferred Date</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${dateLabel} ${timeLabel !== '—' ? 'at ' + timeLabel : ''}</td></tr>` : ''}
-          </table>
-          <div style="background:#f0f7ff;border-left:4px solid #C9A84C;padding:14px 16px;border-radius:4px;margin-bottom:20px;">
-            <p style="margin:0;font-size:13px;color:#0B1C3A;">
-              <strong>Consultation fee: $${CONSULTATION_FEE} CAD</strong> — our team will contact you to arrange payment.
-            </p>
-          </div>
-          <p style="color:#6b7280;font-size:12px;margin:0;">
-            Questions? Reply to this email or contact us at
-            <a href="mailto:${adminEmails[0]}" style="color:#0B1C3A;">${adminEmails[0]}</a>.
-          </p>
-        </div>
-      </div>
-    `
+    const clientHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');</style>
+</head>
+<body style="margin:0;padding:0;background:#eef0f4;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#eef0f4;">
+<tr><td align="center" style="padding:32px 16px;">
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+  <tr>
+    <td style="background:#fff;padding:24px 40px 20px;border-radius:12px 12px 0 0;text-align:center;border-bottom:4px solid #C9A84C;">
+      <img src="https://www.immigrationdepot.online/wp-content/uploads/2020/06/logo_dark-300x82.png" alt="The Immigration Depot" width="180" style="height:auto;display:block;margin:0 auto;">
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#0B1C3A;padding:22px 40px;">
+      <p style="margin:0 0 3px;font-family:'Poppins',Arial,sans-serif;font-size:18px;font-weight:700;color:#C9A84C;">Request Received!</p>
+      <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#94a3b8;">Our team will be in touch within 1 business day</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#fff;padding:32px 40px;">
+
+      <p style="margin:0 0 24px;font-family:'Poppins',Arial,sans-serif;font-size:14px;color:#374151;line-height:1.75;">
+        Hi <strong style="color:#0B1C3A;">${name}</strong>, thank you for reaching out to <strong style="color:#0B1C3A;">${siteName}</strong>. One of our licensed immigration consultants will review your information and contact you shortly to confirm your appointment and discuss next steps.
+      </p>
+
+      <p style="margin:0 0 10px;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#C9A84C;">Booking Summary</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #e2e8f0;border-radius:8px;font-size:13px;margin-bottom:24px;">
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;width:130px;border-bottom:1px solid #f1f5f9;background:#fafbfc;">Program</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#0B1C3A;border-bottom:1px solid #f1f5f9;">${topic}</td></tr>
+        <tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;border-bottom:${preferredDate ? '1px solid #f1f5f9' : 'none'};background:#fafbfc;">Service Level</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;border-bottom:${preferredDate ? '1px solid #f1f5f9' : 'none'};">${tierLabel}</td></tr>
+        ${preferredDate ? `<tr><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;font-weight:600;color:#64748b;background:#fafbfc;">Preferred Date</td><td style="padding:11px 14px;font-family:'Poppins',Arial,sans-serif;color:#1e293b;">${dateLabel}${timeLabel !== '—' ? ' at ' + timeLabel : ''}</td></tr>` : ''}
+      </table>
+
+      <p style="margin:0 0 14px;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#C9A84C;">What Happens Next</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+        <tr>
+          <td width="32" valign="top" style="padding-bottom:10px;">
+            <table cellpadding="0" cellspacing="0"><tr><td style="width:26px;height:26px;background:#0B1C3A;border-radius:50%;text-align:center;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;color:#C9A84C;line-height:26px;">1</td></tr></table>
+          </td>
+          <td style="padding-left:10px;padding-bottom:10px;padding-top:4px;font-family:'Poppins',Arial,sans-serif;font-size:13px;color:#374151;vertical-align:top;">Request received &amp; logged in our system</td>
+        </tr>
+        <tr>
+          <td width="32" valign="top" style="padding-bottom:10px;">
+            <table cellpadding="0" cellspacing="0"><tr><td style="width:26px;height:26px;background:#0B1C3A;border-radius:50%;text-align:center;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;color:#C9A84C;line-height:26px;">2</td></tr></table>
+          </td>
+          <td style="padding-left:10px;padding-bottom:10px;padding-top:4px;font-family:'Poppins',Arial,sans-serif;font-size:13px;color:#374151;vertical-align:top;">Consultant reviews your case details</td>
+        </tr>
+        <tr>
+          <td width="32" valign="top">
+            <table cellpadding="0" cellspacing="0"><tr><td style="width:26px;height:26px;background:#0B1C3A;border-radius:50%;text-align:center;font-family:'Poppins',Arial,sans-serif;font-size:11px;font-weight:700;color:#C9A84C;line-height:26px;">3</td></tr></table>
+          </td>
+          <td style="padding-left:10px;padding-top:4px;font-family:'Poppins',Arial,sans-serif;font-size:13px;color:#374151;vertical-align:top;">We contact you to confirm your appointment</td>
+        </tr>
+      </table>
+
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="background:#fffbeb;border:1.5px solid #fde68a;border-left:4px solid #C9A84C;border-radius:8px;padding:14px 18px;">
+            <p style="margin:0 0 4px;font-family:'Poppins',Arial,sans-serif;font-size:13px;font-weight:700;color:#0B1C3A;">Consultation fee: $${CONSULTATION_FEE} CAD</p>
+            <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#64748b;">Our team will contact you to arrange payment when confirming your appointment.</p>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#f8fafc;padding:20px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e2e8f0;text-align:center;">
+      <p style="margin:0 0 4px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#64748b;">Questions? Reply to this email or write to <a href="mailto:${adminEmails[0]}" style="color:#0B1C3A;text-decoration:none;font-weight:500;">${adminEmails[0]}</a></p>
+      <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:11px;color:#94a3b8;">&copy; ${new Date().getFullYear()} ${siteName} &nbsp;&middot;&nbsp; All rights reserved</p>
+    </td>
+  </tr>
+
+</table>
+</td></tr></table>
+</body>
+</html>`
     await sendRaw({
       to:      email,
       subject: `We received your consultation request — ${siteName}`,
