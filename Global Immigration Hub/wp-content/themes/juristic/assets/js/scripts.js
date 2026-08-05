@@ -926,7 +926,7 @@
   ];
 
   /* API endpoint — same origin as the Next.js app */
-  var API_URL = 'https://immigrationdepot.online/api/inquiry';
+  var API_URL = 'https://www.immigrationdepot.online/api/inquiry';
 
   var style = document.createElement('style');
   style.textContent = [
