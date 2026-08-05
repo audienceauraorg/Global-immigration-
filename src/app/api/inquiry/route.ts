@@ -1,4 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server'
+
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+}
+
+export function OPTIONS() {
+  return new NextResponse(null, { status: 204, headers: CORS })
+}
 import { connectDB } from '@/lib/mongodb'
 import { SiteSettings } from '@/lib/db/models'
 import { sendRaw, getAdminEmails } from '@/lib/email'
@@ -58,9 +68,9 @@ export async function POST(req: NextRequest) {
       html,
     })
 
-    return NextResponse.json({ ok: true })
+    return NextResponse.json({ ok: true }, { headers: CORS })
   } catch (err) {
     console.error('[inquiry]', err)
-    return NextResponse.json({ ok: false, error: 'Internal error' }, { status: 500 })
+    return NextResponse.json({ ok: false, error: 'Internal error' }, { status: 500, headers: CORS })
   }
 }

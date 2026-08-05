@@ -1,4 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
+
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+}
+
+// Handle preflight requests from the static site
+export function OPTIONS() {
+  return new NextResponse(null, { status: 204, headers: CORS })
+}
 import { connectDB } from '@/lib/mongodb'
 import { SiteSettings, ConsultationBooking } from '@/lib/db/models'
 import {
@@ -137,10 +148,10 @@ export async function POST(req: NextRequest) {
       ...(attachments.length > 0 && { attachments }),
     })
 
-    return NextResponse.json({ ok: true, bookingId: booking._id })
+    return NextResponse.json({ ok: true, bookingId: booking._id }, { headers: CORS })
   } catch (err) {
     console.error('[book-consultation]', err)
-    return NextResponse.json({ ok: false, error: 'Internal error' }, { status: 500 })
+    return NextResponse.json({ ok: false, error: 'Internal error' }, { status: 500, headers: CORS })
   }
 }
 
