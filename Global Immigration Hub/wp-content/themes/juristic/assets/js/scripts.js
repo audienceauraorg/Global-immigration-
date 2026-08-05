@@ -827,23 +827,86 @@
 
 })(window.jQuery);
 
-/* ── Floating Messenger button ── */
+/* ── Floating Messenger button with popup ── */
 (function() {
+  var MESSENGER_URL = 'https://m.me/327884021233501';
+  var INQUIRY_OPTIONS = [
+    'Study Permit / Study Visa',
+    'Work Permit',
+    'Express Entry / PR Application',
+    'Spousal & Family Sponsorship',
+    'Visitor Visa / TRV',
+    'SINP / Provincial Nominee Program',
+    'General Inquiry'
+  ];
+
   var style = document.createElement('style');
   style.textContent = [
-    '.gih-messenger-btn{position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0084ff,#00c6ff);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,132,255,0.45);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;}',
-    '.gih-messenger-btn:hover{transform:scale(1.1);box-shadow:0 6px 22px rgba(0,132,255,0.55);}',
-    '.gih-messenger-btn svg{width:28px;height:28px;fill:#fff;}'
+    '.gih-mb{position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0084ff,#00c6ff);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,132,255,0.45);border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}',
+    '.gih-mb:hover{transform:scale(1.1);box-shadow:0 6px 22px rgba(0,132,255,0.55);}',
+    '.gih-mb svg{display:block;fill:#fff;}',
+    '.gih-mp{position:fixed;bottom:92px;right:16px;z-index:9998;width:300px;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.18),0 2px 8px rgba(0,132,255,0.10);overflow:hidden;font-family:Poppins,system-ui,sans-serif;display:none;}',
+    '.gih-mp.open{display:block;}',
+    '.gih-mh{background:linear-gradient(135deg,#0084ff,#00c6ff);padding:14px 16px 12px;display:flex;justify-content:space-between;align-items:flex-start;}',
+    '.gih-mt{color:#fff;font-weight:700;font-size:15px;line-height:1.3;}',
+    '.gih-ms{color:rgba(255,255,255,0.85);font-size:12px;margin-top:3px;}',
+    '.gih-mc{background:none;border:none;color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:0 0 0 10px;opacity:0.85;}',
+    '.gih-mbody{padding:16px;}',
+    '.gih-lbl{display:block;font-size:12px;font-weight:600;color:#555;margin-bottom:5px;}',
+    '.gih-inp,.gih-sel{width:100%;box-sizing:border-box;padding:9px 12px;border-radius:8px;border:1.5px solid #e0e0e0;font-size:13px;background:#fafafa;color:#222;outline:none;font-family:inherit;margin-bottom:12px;}',
+    '.gih-sel{cursor:pointer;}',
+    '.gih-sub{width:100%;padding:11px;background:linear-gradient(135deg,#0084ff,#00c6ff);color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:0.02em;}'
   ].join('');
   document.head.appendChild(style);
 
-  var btn = document.createElement('a');
-  btn.href = 'https://m.me/327884021233501';
-  btn.target = '_blank';
-  btn.rel = 'noopener noreferrer';
-  btn.className = 'gih-messenger-btn';
+  /* Popup */
+  var popup = document.createElement('div');
+  popup.className = 'gih-mp';
+  popup.innerHTML =
+    '<div class="gih-mh">' +
+      '<div><div class="gih-mt">Chat with Us</div><div class="gih-ms">We typically reply within minutes</div></div>' +
+      '<button class="gih-mc" aria-label="Close">\u00d7</button>' +
+    '</div>' +
+    '<div class="gih-mbody">' +
+      '<form>' +
+        '<label class="gih-lbl">Your Name <span style="color:#aaa;font-weight:400;">(optional)</span></label>' +
+        '<input class="gih-inp" type="text" placeholder="e.g. Maria" maxlength="60" />' +
+        '<label class="gih-lbl">I\'m inquiring about\u2026 <span style="color:#d33;font-size:11px;">*</span></label>' +
+        '<select class="gih-sel" required>' +
+          '<option value="" disabled selected>Select a topic\u2026</option>' +
+          INQUIRY_OPTIONS.map(function(o){ return '<option value="' + o + '">' + o + '</option>'; }).join('') +
+        '</select>' +
+        '<button type="submit" class="gih-sub">Chat on Messenger</button>' +
+      '</form>' +
+    '</div>';
+  document.body.appendChild(popup);
+
+  /* Button */
+  var messengerSVG = '<svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.906 1.377 5.504 3.538 7.24V22l3.332-1.83c.89.246 1.833.378 2.13.378 5.522 0 10-4.144 10-9.305C21 6.145 17.523 2 12 2zm1.008 12.535-2.548-2.718-4.976 2.718 5.474-5.813 2.612 2.718 4.91-2.718-5.472 5.813z"/></svg>';
+  var closeSVG     = '<svg viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>';
+
+  var btn = document.createElement('button');
+  btn.className = 'gih-mb';
   btn.setAttribute('aria-label', 'Chat with us on Messenger');
-  btn.innerHTML = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.906 1.377 5.504 3.538 7.24V22l3.332-1.83c.89.246 1.833.378 2.13.378 5.522 0 10-4.144 10-9.305C21 6.145 17.523 2 12 2zm1.008 12.535-2.548-2.718-4.976 2.718 5.474-5.813 2.612 2.718 4.91-2.718-5.472 5.813z"/></svg>';
+  btn.innerHTML = messengerSVG;
   document.body.appendChild(btn);
+
+  /* Logic */
+  var isOpen = false;
+  var form    = popup.querySelector('form');
+  var closeBtn = popup.querySelector('.gih-mc');
+
+  function openPopup()  { isOpen = true;  popup.classList.add('open');    btn.innerHTML = closeSVG;      btn.setAttribute('aria-label','Close'); }
+  function closePopup() { isOpen = false; popup.classList.remove('open'); btn.innerHTML = messengerSVG; btn.setAttribute('aria-label','Chat with us on Messenger'); }
+
+  btn.addEventListener('click', function() { if (isOpen) closePopup(); else openPopup(); });
+  closeBtn.addEventListener('click', closePopup);
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    window.open(MESSENGER_URL, '_blank', 'noopener,noreferrer');
+    form.reset();
+    closePopup();
+  });
 })();
 
