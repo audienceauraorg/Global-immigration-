@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { connectDB } from '@/lib/mongodb'
-import { SiteSettings, User } from '@/lib/db/models'
-import { sendRaw } from '@/lib/email'
+import { SiteSettings } from '@/lib/db/models'
+import { sendRaw, getAdminEmails } from '@/lib/email'
 
 export async function POST(req: NextRequest) {
   try {
@@ -16,12 +16,7 @@ export async function POST(req: NextRequest) {
     const settings = await SiteSettings.findOne().lean()
     const siteName = settings?.siteName ?? 'Global Immigration Hub'
 
-    const staff = await User.find({ role: { $in: ['admin', 'staff'] } }).select('email').lean()
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const adminEmails: string[] = staff.map((u: any) => u.email).filter(Boolean)
-    if (adminEmails.length === 0) {
-      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'info@immigrationdepot.online')
-    }
+    const adminEmails = await getAdminEmails()
 
     const html = `
       <div style="font-family:sans-serif;max-width:600px;margin:0 auto;">

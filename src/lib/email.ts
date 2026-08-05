@@ -48,14 +48,17 @@ async function getEmailSettings(): Promise<EmailSettings> {
   }
 }
 
-async function getAdminEmails(): Promise<string[]> {
+export async function getAdminEmails(): Promise<string[]> {
   await connectDB()
   const settings = await SiteSettings.findOne().lean()
-  // Prefer the explicit contact email from settings
+  // 1. Prefer the explicit contact email from settings
   if (settings?.contactEmail) return [settings.contactEmail]
-  // Fall back to all admin/staff user accounts
+  // 2. Fall back to all admin/staff user accounts
   const staff = await User.find({ role: { $in: ['admin', 'staff'] } }).select('email').lean()
-  return staff.map(u => u.email).filter(Boolean)
+  const emails = staff.map(u => u.email).filter(Boolean) as string[]
+  if (emails.length > 0) return emails
+  // 3. Final fallback: env vars (so emails are never silently dropped)
+  return [process.env.CONTACT_EMAIL ?? process.env.SMTP_FROM_ADDR ?? 'info@immigrationdepot.online']
 }
 
 // ─── Core send helper ─────────────────────────────────────────────────────────

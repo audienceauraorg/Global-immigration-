@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { connectDB } from '@/lib/mongodb'
-import { SiteSettings, User, ConsultationBooking } from '@/lib/db/models'
+import { SiteSettings, ConsultationBooking } from '@/lib/db/models'
 import {
   OFFICIAL_FEES,
   AGENCY_FEES,
@@ -8,7 +8,7 @@ import {
   fmt,
   type ProgramKey,
 } from '@/lib/fees'
-import { sendRaw } from '@/lib/email'
+import { sendRaw, getAdminEmails } from '@/lib/email'
 
 export async function POST(req: NextRequest) {
   try {
@@ -48,12 +48,7 @@ export async function POST(req: NextRequest) {
     })
 
     // ── Get admin recipients ──────────────────────────────────────────────────
-    const staff = await User.find({ role: { $in: ['admin', 'staff'] } }).select('email').lean()
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const adminEmails: string[] = staff.map((u: any) => u.email).filter(Boolean)
-    if (adminEmails.length === 0) {
-      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'info@immigrationdepot.online')
-    }
+    const adminEmails = await getAdminEmails()
 
     // ── Build fee context ─────────────────────────────────────────────────────
     const programKey    = topic as ProgramKey

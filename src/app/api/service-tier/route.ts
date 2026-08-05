@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { auth } from '@/auth'
 import { connectDB } from '@/lib/mongodb'
-import { Case, ActivityLog, SiteSettings, User, CaseFee } from '@/lib/db/models'
+import { Case, ActivityLog, SiteSettings, CaseFee } from '@/lib/db/models'
 import { OFFICIAL_FEES, AGENCY_FEES, CONSULTATION_FEE, fmt, type ProgramKey } from '@/lib/fees'
-import { sendRaw } from '@/lib/email'
+import { sendRaw, getAdminEmails } from '@/lib/email'
 
 /** Parse a breakdown line like 'Processing fee — $850' into { label, amount } */
 function parseBreakdownLine(line: string): { label: string; amount: number } {
@@ -98,12 +98,7 @@ export async function POST(req: NextRequest) {
     // Notify admin
     const settings    = await SiteSettings.findOne().lean()
     const siteName    = settings?.siteName ?? 'Global Immigration Hub'
-    const staff       = await User.find({ role: { $in: ['admin', 'staff'] } }).select('email').lean()
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const adminEmails = staff.map((u: any) => u.email).filter(Boolean) as string[]
-    if (adminEmails.length === 0) {
-      adminEmails.push(process.env.SMTP_FROM_ADDR ?? 'info@immigrationdepot.online')
-    }
+    const adminEmails = await getAdminEmails()
     const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'
 
     await sendRaw({
