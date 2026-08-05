@@ -910,3 +910,125 @@
   });
 })();
 
+/* ── Site Entry Popup ── */
+(function() {
+  var SESSION_KEY = 'gih_entry_popup_shown';
+  if (sessionStorage.getItem(SESSION_KEY)) return;
+
+  var INQUIRY_OPTIONS = [
+    'Study Permit / Study Visa',
+    'Work Permit',
+    'Express Entry / PR Application',
+    'Spousal & Family Sponsorship',
+    'Visitor Visa / TRV',
+    'SINP / Provincial Nominee Program',
+    'General Inquiry'
+  ];
+
+  /* API endpoint — same origin as the Next.js app */
+  var API_URL = 'https://immigrationdepot.online/api/inquiry';
+
+  var style = document.createElement('style');
+  style.textContent = [
+    '.gih-ep-overlay{position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;padding:16px;font-family:Poppins,system-ui,sans-serif;}',
+    '.gih-ep-card{width:100%;max-width:440px;background:#fff;border-radius:20px;box-shadow:0 24px 64px rgba(0,0,0,0.25);overflow:hidden;}',
+    '.gih-ep-head{background:linear-gradient(135deg,#0B1C3A,#163060);padding:24px 24px 20px;position:relative;}',
+    '.gih-ep-close{position:absolute;top:12px;right:16px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.7);font-size:26px;line-height:1;}',
+    '.gih-ep-badge{display:inline-block;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);border-radius:20px;padding:4px 12px;font-size:12px;color:#C9A84C;font-weight:600;margin-bottom:10px;letter-spacing:0.04em;}',
+    '.gih-ep-title{color:#fff;margin:0 0 6px;font-size:22px;font-weight:700;line-height:1.2;}',
+    '.gih-ep-sub{color:rgba(255,255,255,0.75);margin:0;font-size:14px;}',
+    '.gih-ep-body{padding:24px;}',
+    '.gih-ep-lbl{display:block;font-size:12px;font-weight:600;color:#444;margin-bottom:5px;}',
+    '.gih-ep-inp,.gih-ep-sel{width:100%;box-sizing:border-box;padding:10px 14px;border-radius:10px;border:1.5px solid #e0e0e0;font-size:14px;background:#fafafa;color:#222;outline:none;font-family:inherit;margin-bottom:14px;}',
+    '.gih-ep-sel{cursor:pointer;}',
+    '.gih-ep-btn{width:100%;padding:13px;background:linear-gradient(135deg,#C9A84C,#e0ba5c);color:#0B1C3A;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:0.02em;}',
+    '.gih-ep-btn:disabled{background:#ccc;cursor:not-allowed;}',
+    '.gih-ep-hint{font-size:11px;color:#aaa;text-align:center;margin:10px 0 0;}',
+    '.gih-ep-success{text-align:center;padding:12px 0 8px;}',
+    '.gih-ep-icon{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#e0ba5c);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}',
+    '.gih-ep-icon svg{width:28px;height:28px;fill:#0B1C3A;}',
+    '.gih-ep-stitle{color:#0B1C3A;font-size:18px;font-weight:700;margin:0 0 8px;}',
+    '.gih-ep-stext{color:#666;font-size:14px;margin:0;line-height:1.5;}'
+  ].join('');
+  document.head.appendChild(style);
+
+  /* Build markup */
+  var overlay = document.createElement('div');
+  overlay.className = 'gih-ep-overlay';
+  overlay.innerHTML =
+    '<div class="gih-ep-card">' +
+      '<div class="gih-ep-head">' +
+        '<button class="gih-ep-close" aria-label="Close">\u00d7</button>' +
+        '<div class="gih-ep-badge">FREE CONSULTATION</div>' +
+        '<h2 class="gih-ep-title">Start Your Canada Immigration Journey</h2>' +
+        '<p class="gih-ep-sub">Tell us about your goals &mdash; we\'ll reach out to guide you.</p>' +
+      '</div>' +
+      '<div class="gih-ep-body">' +
+        '<form class="gih-ep-form">' +
+          '<label class="gih-ep-lbl">Full Name <span style="color:#d33">*</span></label>' +
+          '<input class="gih-ep-inp" type="text" name="name" placeholder="e.g. Maria Santos" maxlength="80" required />' +
+          '<label class="gih-ep-lbl">Email Address <span style="color:#d33">*</span></label>' +
+          '<input class="gih-ep-inp" type="email" name="email" placeholder="e.g. maria@email.com" required />' +
+          '<label class="gih-ep-lbl">Phone <span style="color:#aaa;font-weight:400;">(optional)</span></label>' +
+          '<input class="gih-ep-inp" type="tel" name="phone" placeholder="e.g. +1 306 123 4567" maxlength="30" />' +
+          '<label class="gih-ep-lbl">I\'m interested in <span style="color:#d33">*</span></label>' +
+          '<select class="gih-ep-sel" name="inquiry" required>' +
+            '<option value="" disabled selected>Select a program\u2026</option>' +
+            INQUIRY_OPTIONS.map(function(o){ return '<option value="' + o + '">' + o + '</option>'; }).join('') +
+          '</select>' +
+          '<button type="submit" class="gih-ep-btn">Get Free Consultation</button>' +
+          '<p class="gih-ep-hint">No commitment. We\'ll contact you within 24 hours.</p>' +
+        '</form>' +
+        '<div class="gih-ep-success" style="display:none;">' +
+          '<div class="gih-ep-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>' +
+          '<h3 class="gih-ep-stitle">Thank You!</h3>' +
+          '<p class="gih-ep-stext">We\'ve received your inquiry.<br/>Our team will reach out to you shortly.</p>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  document.body.appendChild(overlay);
+
+  var card    = overlay.querySelector('.gih-ep-card');
+  var form    = overlay.querySelector('.gih-ep-form');
+  var success = overlay.querySelector('.gih-ep-success');
+  var closeBtn = overlay.querySelector('.gih-ep-close');
+  var submitBtn = overlay.querySelector('.gih-ep-btn');
+
+  function dismiss() {
+    sessionStorage.setItem(SESSION_KEY, '1');
+    overlay.style.display = 'none';
+  }
+
+  overlay.addEventListener('click', dismiss);
+  card.addEventListener('click', function(e) { e.stopPropagation(); });
+  closeBtn.addEventListener('click', dismiss);
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending\u2026';
+
+    var data = {
+      name:    form.querySelector('[name="name"]').value,
+      email:   form.querySelector('[name="email"]').value,
+      phone:   form.querySelector('[name="phone"]').value,
+      inquiry: form.querySelector('[name="inquiry"]').value
+    };
+
+    fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    }).catch(function(){}).finally(function() {
+      sessionStorage.setItem(SESSION_KEY, '1');
+      form.style.display = 'none';
+      success.style.display = 'block';
+      setTimeout(dismiss, 3000);
+    });
+  });
+
+  /* Show after 4 seconds */
+  setTimeout(function() { overlay.style.display = 'flex'; }, 4000);
+  overlay.style.display = 'none'; /* hidden until timer fires */
+})();
+

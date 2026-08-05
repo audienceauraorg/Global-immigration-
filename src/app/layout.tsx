@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins, Quicksand } from 'next/font/google'
 import { Toaster } from 'sonner'
 import MessengerButton from '@/components/MessengerButton'
+import SiteEntryPopup from '@/components/SiteEntryPopup'
 import './globals.css'
 
 const poppins = Poppins({
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         <MessengerButton />
+        <SiteEntryPopup />
       </body>
     </html>
   )
