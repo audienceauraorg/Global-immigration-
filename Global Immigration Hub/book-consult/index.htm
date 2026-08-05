@@ -426,7 +426,7 @@ Stonebridge Common, Saskatoon, SK.					</p>
 						Email Address					</span>
 				</h3>
 									<p class="elementor-icon-box-description">
-						<a href="mailto:globalimmigrationhub.ca@gmail.com">globalimmigrationhub.ca@gmail.com</a>					</p>
+						<a href="mailto:info@immigrationdepot.online">info@immigrationdepot.online</a>					</p>
 							</div>
 		</div>
 				</div>
@@ -445,103 +445,125 @@ Stonebridge Common, Saskatoon, SK.					</p>
 				<div class="elementor-widget-container">
 								<div class="elementor-text-editor elementor-clearfix">
 
-<form id="gih-consult-form" style="display:flex;flex-direction:column;gap:14px;max-width:540px;">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-    <div>
-      <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Full Name *</label>
-      <input type="text" name="name" required placeholder="Jane Smith"
-        style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;box-sizing:border-box;">
-    </div>
-    <div>
-      <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Email Address *</label>
-      <input type="email" name="email" required placeholder="jane@example.com"
-        style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;box-sizing:border-box;">
-    </div>
-  </div>
-  <div>
-    <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Phone Number *</label>
-    <input type="tel" name="phone" required placeholder="+1 (555) 000-0000"
-      style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;box-sizing:border-box;">
-  </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-    <div>
-      <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Preferred Date</label>
-      <input type="date" name="preferredDate"
-        style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;box-sizing:border-box;">
-    </div>
-    <div>
-      <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Preferred Time</label>
-      <input type="time" name="preferredTime"
-        style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;box-sizing:border-box;">
-    </div>
-  </div>
-  <div>
-    <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Topic *</label>
-    <select name="topic" required
-      style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;background:#fff;box-sizing:border-box;">
-      <option value="" disabled selected>Select a topic&hellip;</option>
-      <option>Express Entry</option>
-      <option>Family Sponsorship</option>
-      <option>Study Permit</option>
-      <option>Work Permit</option>
-      <option>Permanent Residency</option>
-      <option>Citizenship Application</option>
-      <option>Refugee &amp; Asylum</option>
-      <option>Other</option>
-    </select>
-  </div>
-  <div>
-    <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:5px;">Brief Description</label>
-    <textarea name="message" rows="4" placeholder="Briefly describe your situation&hellip;"
-      style="width:100%;padding:10px 12px;border:1.5px solid #CBD5E1;border-radius:4px;font-size:14px;color:#1e293b;resize:vertical;box-sizing:border-box;"></textarea>
-  </div>
-  <!-- ── Fee Summary (populated by JS when topic changes) ── -->
-  <div id="gih-fee-box" style="display:none;background:#f0f7ff;border:1.5px solid #bfdbfe;border-radius:6px;padding:14px 16px;margin-top:4px;">
-    <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:8px;">Estimated Fee Breakdown</div>
-    <div id="gih-fee-rows" style="font-size:13px;color:#334155;line-height:1.7;"></div>
-    <div style="margin-top:10px;padding-top:10px;border-top:1px solid #bfdbfe;font-size:12px;color:#64748b;">
-      Official fees are government charges paid directly to IRCC. Agency fees cover professional services.
-      <a href="/fees" style="color:#0B1C3A;font-weight:600;"> Full fee schedule &rarr;</a>
-    </div>
-  </div>
+<style>
+.gih-fw{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:28px 32px;box-shadow:0 4px 28px rgba(11,28,58,0.09);}
+.gih-stag{display:inline-block;font-size:11px;font-weight:700;color:#C9A84C;text-transform:uppercase;letter-spacing:0.09em;background:rgba(201,168,76,0.12);border-radius:20px;padding:3px 13px;margin-bottom:20px;}
+#gih-consult-form{display:flex;flex-direction:column;gap:16px;}
+.gih-g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.gih-f{display:flex;flex-direction:column;gap:5px;}
+.gih-f label{font-size:13px;font-weight:600;color:#374151;}
+.gih-f input,.gih-f select,.gih-f textarea{padding:11px 14px;border:1.5px solid #d1d5db;border-radius:8px;font-size:14px;color:#111827;background:#f9fafb;box-sizing:border-box;width:100%;font-family:inherit;transition:border-color .15s,box-shadow .15s;outline:none;}
+.gih-f input:focus,.gih-f select:focus,.gih-f textarea:focus{border-color:#0B1C3A;box-shadow:0 0 0 3px rgba(11,28,58,0.07);background:#fff;}
+.gih-f textarea{resize:vertical;}
+.gih-hr{border:none;border-top:1px solid #f1f5f9;margin:4px 0;}
+#gih-consult-btn{padding:14px;background:linear-gradient(135deg,#0B1C3A,#163060);color:#C9A84C;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;letter-spacing:0.03em;width:100%;transition:opacity .2s;font-family:inherit;}
+#gih-consult-btn:hover{opacity:0.88;}
+#gih-consult-btn:disabled{opacity:0.6;cursor:not-allowed;}
+@media(max-width:600px){.gih-g2{grid-template-columns:1fr;}.gih-fw{padding:20px 18px;}}
+</style>
 
-  <!-- ── Service Tier ── -->
-  <div>
-    <label style="display:block;font-size:13px;font-weight:600;color:#0B1C3A;margin-bottom:8px;">Service Level *</label>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-      <label id="gih-tier-full" style="cursor:pointer;border:2px solid #0B1C3A;border-radius:6px;padding:12px;background:#0B1C3A;">
-        <input type="radio" name="serviceTier" value="full_handling" checked style="display:none;">
-        <div style="font-size:13px;font-weight:700;color:#C9A84C;margin-bottom:3px;">
-          Full Agent Handling
-          <span style="background:#C9A84C;color:#0B1C3A;font-size:10px;font-weight:800;padding:1px 6px;border-radius:20px;margin-left:4px;vertical-align:middle;">RECOMMENDED</span>
-        </div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.75);">We handle everything — documents, forms, filing &amp; follow-up</div>
-        <div id="gih-full-price" style="font-size:13px;font-weight:700;color:#C9A84C;margin-top:6px;"></div>
-      </label>
-      <label id="gih-tier-filing" style="cursor:pointer;border:2px solid #CBD5E1;border-radius:6px;padding:12px;background:#fff;">
-        <input type="radio" name="serviceTier" value="filing_only" style="display:none;">
-        <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:3px;">Agency-Assisted Filing</div>
-        <div style="font-size:12px;color:#64748b;">You gather documents; we handle forms &amp; submission</div>
-        <div id="gih-filing-price" style="font-size:13px;font-weight:700;color:#0B1C3A;margin-top:6px;"></div>
-      </label>
+<div class="gih-fw">
+  <span class="gih-stag">Book a Consultation</span>
+  <form id="gih-consult-form">
+
+    <!-- Name + Email -->
+    <div class="gih-g2">
+      <div class="gih-f">
+        <label>Full Name <span style="color:#e33;">*</span></label>
+        <input type="text" name="name" required placeholder="Jane Smith">
+      </div>
+      <div class="gih-f">
+        <label>Email Address <span style="color:#e33;">*</span></label>
+        <input type="email" name="email" required placeholder="jane@example.com">
+      </div>
     </div>
-  </div>
 
-  <!-- ── Consultation Fee ── -->
-  <div style="background:#fffbeb;border:1.5px solid #fcd34d;border-radius:6px;padding:14px 16px;">
-    <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:4px;">Consultation Fee &mdash; $35 CAD</div>
-    <p style="font-size:12px;color:#78350f;margin:0;">Your agent will contact you to confirm your appointment and arrange payment.</p>
-  </div>
+    <!-- Phone -->
+    <div class="gih-f">
+      <label>Phone Number <span style="color:#e33;">*</span></label>
+      <input type="tel" name="phone" required placeholder="+1 (555) 000-0000">
+    </div>
 
-  <div id="gih-consult-msg" style="display:none;padding:10px 14px;border-radius:4px;font-size:13px;font-weight:600;"></div>
-  <div>
-    <button type="submit" id="gih-consult-btn"
-      style="padding:12px 28px;background:#0B1C3A;color:#C9A84C;font-size:14px;font-weight:700;border:none;border-radius:4px;cursor:pointer;letter-spacing:0.02em;transition:opacity 0.2s;"
-      onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-      Request Consultation &rarr;
-    </button>
-  </div>
-</form>
+    <!-- Date + Time -->
+    <div class="gih-g2">
+      <div class="gih-f">
+        <label>Preferred Date</label>
+        <input type="date" name="preferredDate">
+      </div>
+      <div class="gih-f">
+        <label>Preferred Time</label>
+        <input type="time" name="preferredTime">
+      </div>
+    </div>
+
+    <!-- Topic -->
+    <div class="gih-f">
+      <label>Topic <span style="color:#e33;">*</span></label>
+      <select name="topic" required>
+        <option value="" disabled selected>Select a topic&hellip;</option>
+        <option>Express Entry</option>
+        <option>Family Sponsorship</option>
+        <option>Study Permit</option>
+        <option>Work Permit</option>
+        <option>Permanent Residency</option>
+        <option>Citizenship Application</option>
+        <option>Refugee &amp; Asylum</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <!-- Description -->
+    <div class="gih-f">
+      <label>Brief Description</label>
+      <textarea name="message" rows="4" placeholder="Briefly describe your situation&hellip;"></textarea>
+    </div>
+
+    <hr class="gih-hr">
+
+    <!-- Fee Summary -->
+    <div id="gih-fee-box" style="display:none;background:#f0f7ff;border:1.5px solid #bfdbfe;border-radius:10px;padding:14px 16px;">
+      <div style="font-size:11px;font-weight:700;color:#0B1C3A;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Estimated Fee Breakdown</div>
+      <div id="gih-fee-rows" style="font-size:13px;color:#334155;line-height:1.9;"></div>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid #bfdbfe;font-size:12px;color:#64748b;">
+        Official fees are government charges paid directly to IRCC. Agency fees cover professional services.
+        <a href="/fees" style="color:#0B1C3A;font-weight:600;"> Full fee schedule &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Service Tier -->
+    <div>
+      <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:10px;">Service Level <span style="color:#e33;">*</span></div>
+      <div class="gih-g2">
+        <label id="gih-tier-full" style="cursor:pointer;border:2px solid #0B1C3A;border-radius:10px;padding:14px;background:#0B1C3A;">
+          <input type="radio" name="serviceTier" value="full_handling" checked style="display:none;">
+          <div style="font-size:13px;font-weight:700;color:#C9A84C;margin-bottom:4px;line-height:1.3;">
+            Full Agent Handling
+            <span style="background:#C9A84C;color:#0B1C3A;font-size:9px;font-weight:800;padding:2px 7px;border-radius:20px;margin-left:4px;vertical-align:middle;letter-spacing:0.04em;">RECOMMENDED</span>
+          </div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.75);line-height:1.4;">We handle everything — documents, forms, filing &amp; follow-up</div>
+          <div id="gih-full-price" style="font-size:13px;font-weight:700;color:#C9A84C;margin-top:8px;"></div>
+        </label>
+        <label id="gih-tier-filing" style="cursor:pointer;border:2px solid #d1d5db;border-radius:10px;padding:14px;background:#fff;">
+          <input type="radio" name="serviceTier" value="filing_only" style="display:none;">
+          <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:4px;">Agency-Assisted Filing</div>
+          <div style="font-size:12px;color:#64748b;line-height:1.4;">You gather documents; we handle forms &amp; submission</div>
+          <div id="gih-filing-price" style="font-size:13px;font-weight:700;color:#0B1C3A;margin-top:8px;"></div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Consultation Fee notice -->
+    <div style="background:linear-gradient(135deg,rgba(11,28,58,0.04),rgba(201,168,76,0.07));border:1.5px solid rgba(201,168,76,0.35);border-radius:10px;padding:14px 18px;">
+      <div style="font-size:13px;font-weight:700;color:#0B1C3A;margin-bottom:4px;">Consultation Fee &mdash; $35 CAD</div>
+      <p style="font-size:12px;color:#6b7280;margin:0;line-height:1.5;">Your agent will contact you to confirm your appointment and arrange payment.</p>
+    </div>
+
+    <div id="gih-consult-msg" style="display:none;padding:12px 16px;border-radius:8px;font-size:13px;font-weight:600;"></div>
+
+    <button type="submit" id="gih-consult-btn">Request Consultation &rarr;</button>
+
+  </form>
+</div>
 <script>
 (function(){
   // ── Fee data ───────────────────────────────────────────────────────────────
