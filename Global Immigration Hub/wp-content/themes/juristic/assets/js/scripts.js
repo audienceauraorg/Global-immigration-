@@ -827,135 +827,23 @@
 
 })(window.jQuery);
 
-/* ── Floating Messenger button with inquiry form ── */
+/* ── Floating Messenger button ── */
 (function() {
-  var MESSENGER_URL = 'https://m.me/327884021233501';
-  var INQUIRY_OPTIONS = [
-    'Study Permit / Study Visa',
-    'Work Permit',
-    'Express Entry / PR Application',
-    'Spousal & Family Sponsorship',
-    'Visitor Visa / TRV',
-    'SINP / Provincial Nominee Program',
-    'General Inquiry'
-  ];
-
-  /* ── Styles ── */
   var style = document.createElement('style');
   style.textContent = [
-    /* Button */
-    '.gih-msg-btn{position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0084ff,#00c6ff);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,132,255,0.45);border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;}',
-    '.gih-msg-btn:hover{transform:scale(1.1);box-shadow:0 6px 22px rgba(0,132,255,0.55);}',
-    '.gih-msg-btn svg{width:28px;height:28px;fill:#fff;display:block;}',
-    /* Popup */
-    '.gih-msg-popup{position:fixed;bottom:92px;right:24px;z-index:9998;width:288px;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.18),0 2px 8px rgba(0,132,255,0.12);overflow:hidden;font-family:Poppins,system-ui,sans-serif;display:none;}',
-    '.gih-msg-popup.open{display:block;}',
-    '.gih-msg-header{background:linear-gradient(135deg,#0084ff,#00c6ff);padding:14px 16px 12px;display:flex;justify-content:space-between;align-items:flex-start;}',
-    '.gih-msg-header-text{color:#fff;}',
-    '.gih-msg-title{font-weight:700;font-size:15px;}',
-    '.gih-msg-sub{font-size:12px;margin-top:2px;opacity:0.85;}',
-    '.gih-msg-close{background:none;border:none;color:#fff;font-size:22px;line-height:1;cursor:pointer;padding:0 0 0 8px;margin-top:-2px;opacity:0.85;}',
-    '.gih-msg-body{padding:16px;}',
-    '.gih-msg-label{display:block;font-size:12px;font-weight:600;color:#555;margin-bottom:5px;}',
-    '.gih-msg-req{color:#d33;font-size:11px;}',
-    '.gih-msg-opt{color:#aaa;font-weight:400;}',
-    '.gih-msg-input,.gih-msg-select{width:100%;box-sizing:border-box;padding:9px 12px;border-radius:8px;border:1.5px solid #e0e0e0;font-size:13px;background:#fafafa;color:#222;outline:none;font-family:inherit;margin-bottom:12px;}',
-    '.gih-msg-select{cursor:pointer;}',
-    '.gih-msg-submit{width:100%;padding:11px;background:linear-gradient(135deg,#0084ff,#00c6ff);color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:0.02em;}',
-    '.gih-msg-hint{font-size:11px;color:#aaa;text-align:center;margin:8px 0 0;}',
-    /* Success state */
-    '.gih-msg-success{padding:24px 16px;text-align:center;display:none;}',
-    '.gih-msg-success.show{display:block;}',
-    '.gih-msg-success-icon{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0084ff,#00c6ff);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;}',
-    '.gih-msg-success-icon svg{width:22px;height:22px;fill:#fff;}',
-    '.gih-msg-success-title{font-weight:700;color:#0084ff;font-size:15px;margin-bottom:4px;}',
-    '.gih-msg-success-text{font-size:13px;color:#666;}'
+    '.gih-messenger-btn{position:fixed;bottom:24px;right:24px;z-index:9999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#0084ff,#00c6ff);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,132,255,0.45);text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;}',
+    '.gih-messenger-btn:hover{transform:scale(1.1);box-shadow:0 6px 22px rgba(0,132,255,0.55);}',
+    '.gih-messenger-btn svg{width:28px;height:28px;fill:#fff;}'
   ].join('');
   document.head.appendChild(style);
 
-  /* ── Popup markup ── */
-  var popup = document.createElement('div');
-  popup.className = 'gih-msg-popup';
-  popup.innerHTML =
-    '<div class="gih-msg-header">' +
-      '<div class="gih-msg-header-text">' +
-        '<div class="gih-msg-title">Chat with Us</div>' +
-        '<div class="gih-msg-sub">We typically reply within minutes</div>' +
-      '</div>' +
-      '<button class="gih-msg-close" aria-label="Close">\u00d7</button>' +
-    '</div>' +
-    '<div class="gih-msg-body">' +
-      '<form class="gih-msg-form">' +
-        '<label class="gih-msg-label">Your Name <span class="gih-msg-opt">(optional)</span></label>' +
-        '<input class="gih-msg-input" type="text" placeholder="e.g. Maria" maxlength="60" />' +
-        '<label class="gih-msg-label">I\'m inquiring about\u2026 <span class="gih-msg-req">*</span></label>' +
-        '<select class="gih-msg-select" required>' +
-          '<option value="" disabled selected>Select a topic\u2026</option>' +
-          INQUIRY_OPTIONS.map(function(o){ return '<option value="' + o + '">' + o + '</option>'; }).join('') +
-        '</select>' +
-        '<button type="submit" class="gih-msg-submit">Start Chat on Messenger</button>' +
-        '<p class="gih-msg-hint">Your message will be copied \u2014 paste it to begin.</p>' +
-      '</form>' +
-      '<div class="gih-msg-success">' +
-        '<div class="gih-msg-success-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>' +
-        '<div class="gih-msg-success-title">Message Copied!</div>' +
-        '<div class="gih-msg-success-text">Paste it in Messenger to start your conversation.</div>' +
-      '</div>' +
-    '</div>';
-  document.body.appendChild(popup);
-
-  /* ── Floating button ── */
-  var btn = document.createElement('button');
-  btn.className = 'gih-msg-btn';
+  var btn = document.createElement('a');
+  btn.href = 'https://m.me/327884021233501';
+  btn.target = '_blank';
+  btn.rel = 'noopener noreferrer';
+  btn.className = 'gih-messenger-btn';
   btn.setAttribute('aria-label', 'Chat with us on Messenger');
-  var messengerIcon = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.906 1.377 5.504 3.538 7.24V22l3.332-1.83c.89.246 1.833.378 2.13.378 5.522 0 10-4.144 10-9.305C21 6.145 17.523 2 12 2zm1.008 12.535-2.548-2.718-4.976 2.718 5.474-5.813 2.612 2.718 4.91-2.718-5.472 5.813z"/></svg>';
-  var closeIcon = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:22px;height:22px;fill:#fff;display:block;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>';
-  btn.innerHTML = messengerIcon;
+  btn.innerHTML = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.906 1.377 5.504 3.538 7.24V22l3.332-1.83c.89.246 1.833.378 2.13.378 5.522 0 10-4.144 10-9.305C21 6.145 17.523 2 12 2zm1.008 12.535-2.548-2.718-4.976 2.718 5.474-5.813 2.612 2.718 4.91-2.718-5.472 5.813z"/></svg>';
   document.body.appendChild(btn);
-
-  /* ── Logic ── */
-  var isOpen = false;
-  var form = popup.querySelector('.gih-msg-form');
-  var successDiv = popup.querySelector('.gih-msg-success');
-  var nameInput = popup.querySelector('.gih-msg-input');
-  var selectEl = popup.querySelector('.gih-msg-select');
-  var closeBtn = popup.querySelector('.gih-msg-close');
-
-  function openPopup() {
-    isOpen = true;
-    popup.classList.add('open');
-    btn.setAttribute('aria-label', 'Close chat form');
-    btn.innerHTML = closeIcon;
-  }
-  function closePopup() {
-    isOpen = false;
-    popup.classList.remove('open');
-    btn.setAttribute('aria-label', 'Chat with us on Messenger');
-    btn.innerHTML = messengerIcon;
-  }
-
-  btn.addEventListener('click', function() {
-    if (isOpen) { closePopup(); } else { openPopup(); }
-  });
-  closeBtn.addEventListener('click', closePopup);
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var name = nameInput.value.trim();
-    var topic = selectEl.value || 'General Inquiry';
-    var namePart = name ? 'Hi! My name is ' + name + '.' : 'Hi!';
-    var msg = namePart + ' I\'m inquiring about ' + topic + '. Can you help me?';
-    try { navigator.clipboard.writeText(msg); } catch(err) {}
-    form.style.display = 'none';
-    successDiv.classList.add('show');
-    window.open(MESSENGER_URL, '_blank', 'noopener,noreferrer');
-    setTimeout(function() {
-      successDiv.classList.remove('show');
-      form.style.display = '';
-      nameInput.value = '';
-      selectEl.value = '';
-      closePopup();
-    }, 3000);
-  });
 })();
 
