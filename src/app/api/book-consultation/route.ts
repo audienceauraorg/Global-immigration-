@@ -1,15 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-
-const CORS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
-}
-
-// Handle preflight requests from the static site
-export function OPTIONS() {
-  return new NextResponse(null, { status: 204, headers: CORS })
-}
 import { connectDB } from '@/lib/mongodb'
 import { SiteSettings, ConsultationBooking } from '@/lib/db/models'
 import {
@@ -20,6 +9,16 @@ import {
   type ProgramKey,
 } from '@/lib/fees'
 import { sendRaw, getAdminEmails } from '@/lib/email'
+
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+}
+
+export function OPTIONS() {
+  return new NextResponse(null, { status: 204, headers: CORS })
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -34,7 +33,7 @@ export async function POST(req: NextRequest) {
     } = body
 
     if (!name || !email || !phone || !topic) {
-      return NextResponse.json({ ok: false, error: 'Missing required fields' }, { status: 400 })
+      return NextResponse.json({ ok: false, error: 'Missing required fields' }, { status: 400, headers: CORS })
     }
 
     await connectDB()
