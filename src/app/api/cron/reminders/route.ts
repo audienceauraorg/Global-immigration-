@@ -16,35 +16,71 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { connectDB } from '@/lib/mongodb'
 import { Case, Client, SiteSettings, User, ActivityLog } from '@/lib/db/models'
-import { render } from '@react-email/render'
-import { createElement } from 'react'
 import { sendRaw } from '@/lib/email'
 
-// ─── Inline reminder email templates ─────────────────────────────────────────
+// ─── Email HTML builders ──────────────────────────────────────────────────────
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function DeadlineReminderEmail({ clientName, programName, daysUntil, importantDate, adminUrl, siteName }: any) {
-  return createElement('div', { style: { fontFamily: 'sans-serif', maxWidth: '560px', margin: '0 auto' } },
-    createElement('h2', { style: { color: '#0B1C3A' } }, `${siteName} — Deadline Alert`),
-    createElement('p', null,
-      `${clientName}'s case (${programName}) has an important date in `,
-      createElement('strong', null, `${daysUntil} day${daysUntil === 1 ? '' : 's'}`),
-      ` (${importantDate}).`
-    ),
-    createElement('a', { href: adminUrl, style: { color: '#C9A84C' } }, 'Open client in dashboard →')
+function emailShell(titleLine: string, subtitle: string, body: string, siteName: string) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');</style>
+</head>
+<body style="margin:0;padding:0;background:#eef0f4;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#eef0f4;">
+<tr><td align="center" style="padding:32px 16px;">
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+  <tr><td style="background:#fff;padding:24px 40px 20px;border-radius:12px 12px 0 0;text-align:center;border-bottom:4px solid #C9A84C;">
+    <img src="https://www.immigrationdepot.online/wp-content/uploads/2020/06/logo_dark-300x82.png" alt="The Immigration Depot" width="180" style="height:auto;display:block;margin:0 auto;">
+  </td></tr>
+  <tr><td style="background:#0B1C3A;padding:22px 40px;">
+    <p style="margin:0 0 3px;font-family:'Poppins',Arial,sans-serif;font-size:18px;font-weight:700;color:#C9A84C;">${titleLine}</p>
+    <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#94a3b8;">${subtitle}</p>
+  </td></tr>
+  <tr><td style="background:#fff;padding:32px 40px;">${body}</td></tr>
+  <tr><td style="background:#f8fafc;padding:18px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e2e8f0;text-align:center;">
+    <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:11px;color:#94a3b8;">${siteName} &nbsp;&middot;&nbsp; Automated reminder</p>
+  </td></tr>
+</table>
+</td></tr></table>
+</body></html>`
+}
+
+function deadlineHtml(clientName: string, programName: string, daysUntil: number, importantDate: string, adminUrl: string, siteName: string) {
+  return emailShell(
+    'Upcoming Deadline Alert',
+    `${siteName} &nbsp;&middot;&nbsp; Case management`,
+    `<table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #fde68a;border-left:4px solid #C9A84C;border-radius:8px;margin-bottom:24px;">
+      <tr><td style="padding:16px 18px;">
+        <p style="margin:0 0 6px;font-family:'Poppins',Arial,sans-serif;font-size:14px;color:#1e293b;line-height:1.6;">
+          <strong style="color:#0B1C3A;">${clientName}</strong>'s case (<em>${programName}</em>) has an important date in
+          <strong style="color:#b45309;">${daysUntil} day${daysUntil === 1 ? '' : 's'}</strong> — on <strong>${importantDate}</strong>.
+        </p>
+      </td></tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
+      <a href="${adminUrl}" style="display:inline-block;background:#0B1C3A;color:#C9A84C;font-family:'Poppins',Arial,sans-serif;font-size:13px;font-weight:600;text-decoration:none;padding:11px 28px;border-radius:6px;letter-spacing:0.3px;">Open Client in Dashboard</a>
+    </td></tr></table>`,
+    siteName
   )
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function StaleCaseEmail({ clientName, programName, daysSinceActivity, adminUrl, siteName }: any) {
-  return createElement('div', { style: { fontFamily: 'sans-serif', maxWidth: '560px', margin: '0 auto' } },
-    createElement('h2', { style: { color: '#0B1C3A' } }, `${siteName} — Stale Case Alert`),
-    createElement('p', null,
-      `${clientName}'s case (${programName}) has had no activity for `,
-      createElement('strong', null, `${daysSinceActivity} days`),
-      '.'
-    ),
-    createElement('a', { href: adminUrl, style: { color: '#C9A84C' } }, 'Open client in dashboard →')
+function staleHtml(clientName: string, programName: string, daysSinceActivity: number, adminUrl: string, siteName: string) {
+  return emailShell(
+    'Stale Case Alert',
+    `${siteName} &nbsp;&middot;&nbsp; Case management`,
+    `<table width="100%" cellpadding="0" cellspacing="0" style="border:1.5px solid #fecaca;border-left:4px solid #ef4444;border-radius:8px;margin-bottom:24px;">
+      <tr><td style="padding:16px 18px;">
+        <p style="margin:0 0 6px;font-family:'Poppins',Arial,sans-serif;font-size:14px;color:#1e293b;line-height:1.6;">
+          <strong style="color:#0B1C3A;">${clientName}</strong>'s case (<em>${programName}</em>) has had no activity for
+          <strong style="color:#dc2626;">${daysSinceActivity} days</strong>. Consider following up with the client.
+        </p>
+      </td></tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
+      <a href="${adminUrl}" style="display:inline-block;background:#0B1C3A;color:#C9A84C;font-family:'Poppins',Arial,sans-serif;font-size:13px;font-weight:600;text-decoration:none;padding:11px 28px;border-radius:6px;letter-spacing:0.3px;">Open Client in Dashboard</a>
+    </td></tr></table>`,
+    siteName
   )
 }
 
@@ -82,10 +118,8 @@ export async function GET(req: NextRequest) {
   const sent: string[] = []
   const errors: string[] = []
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  async function sendAlert(subject: string, component: React.ReactElement) {
+  async function sendAlert(subject: string, html: string) {
     try {
-      const html = await render(component)
       await sendRaw({ to: adminEmails, subject, html })
       sent.push(subject)
     } catch (err) {
@@ -109,10 +143,7 @@ export async function GET(req: NextRequest) {
 
     await sendAlert(
       `Deadline in ${daysUntil}d — ${clientName}`,
-      createElement(DeadlineReminderEmail, {
-        clientName, programName, daysUntil, importantDate: dateStr,
-        adminUrl: `${appUrl}/admin/clients/${c.clientId.toString()}`, siteName,
-      })
+      deadlineHtml(clientName, programName, daysUntil, dateStr, `${appUrl}/admin/clients/${c.clientId.toString()}`, siteName)
     )
   }
 
@@ -135,10 +166,7 @@ export async function GET(req: NextRequest) {
 
     await sendAlert(
       `Stale case (${daysSince}d) — ${clientName}`,
-      createElement(StaleCaseEmail, {
-        clientName, programName, daysSinceActivity: daysSince,
-        adminUrl: `${appUrl}/admin/clients/${c.clientId.toString()}`, siteName,
-      })
+      staleHtml(clientName, programName, daysSince, `${appUrl}/admin/clients/${c.clientId.toString()}`, siteName)
     )
   }
 

@@ -910,8 +910,8 @@
   });
 })();
 
-/* ── Site Entry Popup ── */
-(function() {
+/* ── Site Entry Popup handled by React component (SiteEntryPopup.tsx) ── */
+if (false) (function() {
   var SESSION_KEY = 'gih_entry_popup_shown';
   if (sessionStorage.getItem(SESSION_KEY)) return;
 

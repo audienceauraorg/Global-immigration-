@@ -3,10 +3,11 @@ import {
   Button,
   Container,
   Head,
-  Heading,
   Hr,
   Html,
+  Img,
   Preview,
+  Section,
   Text,
 } from '@react-email/components'
 
@@ -29,95 +30,101 @@ export function WelcomeEmail({
 
   return (
     <Html>
-      <Head />
+      <Head>
+        <style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');`}</style>
+      </Head>
       <Preview>Welcome to {siteName} — your client portal is ready</Preview>
       <Body style={body}>
         <Container style={container}>
 
-          {/* Header */}
-          <div style={header}>
-            <div style={logoText}>{siteName}</div>
-            <div style={logoSub}>Client Portal</div>
+          {/* Logo header */}
+          <div style={logoHeader}>
+            <Img
+              src="https://www.immigrationdepot.online/wp-content/uploads/2020/06/logo_dark-300x82.png"
+              alt="The Immigration Depot"
+              width={180}
+              style={{ display: 'block', margin: '0 auto', height: 'auto' }}
+            />
+          </div>
+
+          {/* Title bar */}
+          <div style={titleBar}>
+            <Text style={titleText}>Welcome, {firstName}!</Text>
+            <Text style={titleSub}>Your client portal is now active</Text>
           </div>
 
           {/* Body */}
-          <Heading style={h1}>Welcome, {firstName}!</Heading>
+          <div style={bodySection}>
 
-          <Text style={text}>
-            Your enrollment has been confirmed and your client portal is now active. We&apos;re
-            excited to support you through your Canadian immigration journey.
-          </Text>
+            <Text style={text}>
+              Your enrollment has been confirmed and your client portal is now active. We&apos;re
+              excited to support you through your Canadian immigration journey.
+            </Text>
 
-          {programName !== 'Not selected' && (
-            <div style={programBadge}>
-              <span style={programLabel}>Your Program</span>
-              <span style={programName_}>{programName}</span>
-            </div>
-          )}
+            {programName !== 'Not selected' && (
+              <div style={programBadge}>
+                <Text style={programLabel}>Your Program</Text>
+                <Text style={programValue}>{programName}</Text>
+              </div>
+            )}
 
-          <Text style={text}>
-            Use the button below to log in to your portal. Your login email is{' '}
-            <strong>{clientEmail}</strong>. Use the password you created during registration.
-          </Text>
+            <Text style={text}>
+              Use the button below to log in to your portal. Your login email is{' '}
+              <strong>{clientEmail}</strong>. Use the password you created during registration.
+            </Text>
 
-          <div style={{ textAlign: 'center' as const, margin: '32px 0' }}>
-            <Button href={portalUrl} style={button}>
-              Access Your Portal →
-            </Button>
-          </div>
+            <Section style={{ textAlign: 'center' as const, margin: '28px 0' }}>
+              <Button href={portalUrl} style={button}>
+                Access Your Portal →
+              </Button>
+            </Section>
 
-          <Hr style={hr} />
+            <Hr style={hr} />
 
-          {/* What to expect */}
-          <Heading as="h2" style={h2}>What happens next?</Heading>
+            <Text style={sectionLabel}>What happens next?</Text>
 
-          <div style={stepList}>
-            <div style={step}>
-              <span style={stepNum}>1</span>
+            <div style={stepRow}>
+              <div style={stepCircle}>1</div>
               <div>
-                <strong style={stepTitle}>Review your document checklist</strong>
+                <Text style={stepTitle}>Review your document checklist</Text>
                 <Text style={stepDesc}>
                   Log in and head to the Documents section to see exactly what we need from you to
                   get started.
                 </Text>
               </div>
             </div>
-            <div style={step}>
-              <span style={stepNum}>2</span>
+            <div style={stepRow}>
+              <div style={stepCircle}>2</div>
               <div>
-                <strong style={stepTitle}>Upload your documents</strong>
+                <Text style={stepTitle}>Upload your documents</Text>
                 <Text style={stepDesc}>
                   You can upload documents directly through your portal at any time. Our team will
                   review each one and notify you of the status.
                 </Text>
               </div>
             </div>
-            <div style={step}>
-              <span style={stepNum}>3</span>
+            <div style={stepRow}>
+              <div style={stepCircle}>3</div>
               <div>
-                <strong style={stepTitle}>Track your progress</strong>
+                <Text style={stepTitle}>Track your progress</Text>
                 <Text style={stepDesc}>
                   Your portal shows a real-time progress tracker so you always know where your
                   application stands.
                 </Text>
               </div>
             </div>
+
           </div>
 
-          <Hr style={hr} />
-
-          <Text style={text}>
-            If you have any questions, reply to this email or reach out to your consultant directly.
-            We&apos;re here to help.
-          </Text>
-
-          <Text style={footer}>
-            — The {siteName} Team
-            <br />
-            <br />
-            This email was sent to {clientEmail} because you registered for a client account.
-            Please keep your login credentials safe.
-          </Text>
+          {/* Footer */}
+          <div style={footer}>
+            <Text style={footerText}>
+              Questions? Reply to this email or reach out to your consultant directly.
+            </Text>
+            <Text style={footerMeta}>
+              Sent to {clientEmail} &nbsp;&middot;&nbsp; &copy; {new Date().getFullYear()} {siteName}
+            </Text>
+          </div>
 
         </Container>
       </Body>
@@ -130,149 +137,169 @@ export default WelcomeEmail
 // ── Styles ────────────────────────────────────────────────────────────────────
 
 const body: React.CSSProperties = {
-  backgroundColor: '#EEF0F6',
-  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  backgroundColor: '#eef0f4',
+  fontFamily: "'Poppins', Arial, sans-serif",
+  margin: 0,
+  padding: 0,
 }
 
 const container: React.CSSProperties = {
-  maxWidth: '580px',
-  margin: '40px auto',
+  maxWidth: '600px',
+  margin: '32px auto',
+}
+
+const logoHeader: React.CSSProperties = {
   backgroundColor: '#ffffff',
-  borderRadius: '10px',
-  overflow: 'hidden',
+  padding: '24px 40px 20px',
+  borderRadius: '12px 12px 0 0',
+  textAlign: 'center' as const,
+  borderBottom: '4px solid #C9A84C',
 }
 
-const header: React.CSSProperties = {
+const titleBar: React.CSSProperties = {
   backgroundColor: '#0B1C3A',
-  padding: '28px 40px',
+  padding: '22px 40px',
 }
 
-const logoText: React.CSSProperties = {
+const titleText: React.CSSProperties = {
+  margin: '0 0 3px',
+  fontFamily: "'Poppins', Arial, sans-serif",
+  fontSize: '18px',
+  fontWeight: 700,
   color: '#C9A84C',
-  fontSize: '20px',
-  fontWeight: '700',
-  letterSpacing: '-0.02em',
 }
 
-const logoSub: React.CSSProperties = {
-  color: 'rgba(255,255,255,0.45)',
-  fontSize: '11px',
-  fontWeight: '600',
-  letterSpacing: '0.12em',
-  textTransform: 'uppercase',
-  marginTop: '2px',
+const titleSub: React.CSSProperties = {
+  margin: 0,
+  fontFamily: "'Poppins', Arial, sans-serif",
+  fontSize: '12px',
+  color: '#94a3b8',
 }
 
-const h1: React.CSSProperties = {
-  color: '#0B1C3A',
-  fontSize: '24px',
-  fontWeight: '700',
-  margin: '32px 40px 8px',
-}
-
-const h2: React.CSSProperties = {
-  color: '#0B1C3A',
-  fontSize: '16px',
-  fontWeight: '700',
-  margin: '0 40px 16px',
+const bodySection: React.CSSProperties = {
+  backgroundColor: '#ffffff',
+  padding: '32px 40px',
 }
 
 const text: React.CSSProperties = {
+  fontFamily: "'Poppins', Arial, sans-serif",
   color: '#374151',
-  fontSize: '15px',
-  lineHeight: '1.65',
-  margin: '0 40px 16px',
+  fontSize: '14px',
+  lineHeight: '1.7',
+  margin: '0 0 16px',
 }
 
 const programBadge: React.CSSProperties = {
-  background: '#F0F4FF',
-  border: '1px solid #C7D2FE',
+  backgroundColor: '#fffbeb',
+  border: '1.5px solid #fde68a',
+  borderLeft: '4px solid #C9A84C',
   borderRadius: '8px',
-  padding: '14px 20px',
-  margin: '0 40px 20px',
-  display: 'flex',
-  flexDirection: 'column' as const,
-  gap: '2px',
+  padding: '14px 18px',
+  marginBottom: '20px',
 }
 
 const programLabel: React.CSSProperties = {
+  fontFamily: "'Poppins', Arial, sans-serif",
   fontSize: '11px',
-  fontWeight: '700',
+  fontWeight: 700,
   letterSpacing: '0.08em',
   textTransform: 'uppercase' as const,
-  color: '#6366F1',
+  color: '#C9A84C',
+  margin: '0 0 4px',
 }
 
-const programName_: React.CSSProperties = {
+const programValue: React.CSSProperties = {
+  fontFamily: "'Poppins', Arial, sans-serif",
   fontSize: '15px',
-  fontWeight: '600',
-  color: '#1E1B4B',
-  marginTop: '2px',
+  fontWeight: 600,
+  color: '#0B1C3A',
+  margin: 0,
 }
 
 const button: React.CSSProperties = {
   backgroundColor: '#0B1C3A',
   color: '#C9A84C',
   borderRadius: '6px',
-  padding: '14px 36px',
-  fontSize: '15px',
-  fontWeight: '700',
+  padding: '12px 32px',
+  fontSize: '14px',
+  fontWeight: 700,
   textDecoration: 'none',
   display: 'inline-block',
-  letterSpacing: '0.02em',
+  fontFamily: "'Poppins', Arial, sans-serif",
+  letterSpacing: '0.3px',
 }
 
 const hr: React.CSSProperties = {
-  borderColor: '#E5E7EB',
-  margin: '24px 40px',
+  borderColor: '#e2e8f0',
+  margin: '24px 0',
 }
 
-const stepList: React.CSSProperties = {
-  margin: '0 40px 24px',
-  display: 'flex',
-  flexDirection: 'column' as const,
-  gap: '20px',
+const sectionLabel: React.CSSProperties = {
+  fontFamily: "'Poppins', Arial, sans-serif",
+  fontSize: '11px',
+  fontWeight: 700,
+  textTransform: 'uppercase' as const,
+  letterSpacing: '0.8px',
+  color: '#C9A84C',
+  margin: '0 0 14px',
 }
 
-const step: React.CSSProperties = {
+const stepRow: React.CSSProperties = {
   display: 'flex',
-  gap: '16px',
+  gap: '14px',
   alignItems: 'flex-start',
+  marginBottom: '16px',
 }
 
-const stepNum: React.CSSProperties = {
+const stepCircle: React.CSSProperties = {
   flexShrink: 0,
-  width: '28px',
-  height: '28px',
+  width: '26px',
+  height: '26px',
   borderRadius: '50%',
-  backgroundColor: '#C9A84C',
-  color: '#0B1C3A',
-  fontSize: '13px',
-  fontWeight: '700',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  lineHeight: '28px',
+  backgroundColor: '#0B1C3A',
+  color: '#C9A84C',
+  fontSize: '11px',
+  fontWeight: 700,
+  fontFamily: "'Poppins', Arial, sans-serif",
+  lineHeight: '26px',
   textAlign: 'center' as const,
+  marginTop: '2px',
 }
 
 const stepTitle: React.CSSProperties = {
-  fontSize: '14px',
-  color: '#111827',
-  display: 'block',
-  marginBottom: '2px',
+  fontFamily: "'Poppins', Arial, sans-serif",
+  fontSize: '13px',
+  fontWeight: 600,
+  color: '#0B1C3A',
+  margin: '0 0 3px',
 }
 
 const stepDesc: React.CSSProperties = {
-  color: '#6B7280',
-  fontSize: '13px',
-  lineHeight: '1.55',
-  margin: '0',
+  fontFamily: "'Poppins', Arial, sans-serif",
+  color: '#64748b',
+  fontSize: '12px',
+  lineHeight: '1.6',
+  margin: 0,
 }
 
 const footer: React.CSSProperties = {
-  color: '#9CA3AF',
+  backgroundColor: '#f8fafc',
+  padding: '20px 40px',
+  borderRadius: '0 0 12px 12px',
+  borderTop: '1px solid #e2e8f0',
+  textAlign: 'center' as const,
+}
+
+const footerText: React.CSSProperties = {
+  fontFamily: "'Poppins', Arial, sans-serif",
   fontSize: '12px',
-  lineHeight: '1.6',
-  margin: '0 40px 32px',
+  color: '#64748b',
+  margin: '0 0 4px',
+}
+
+const footerMeta: React.CSSProperties = {
+  fontFamily: "'Poppins', Arial, sans-serif",
+  fontSize: '11px',
+  color: '#94a3b8',
+  margin: 0,
 }
