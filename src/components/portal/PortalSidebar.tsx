@@ -19,15 +19,17 @@ export default function PortalSidebar({ siteName, user }: PortalSidebarProps) {
     >
       {/* Logo */}
       <div
-        className="flex items-center gap-3 px-5 pt-5 pb-4"
+        className="flex items-center px-5 pt-5 pb-4"
         style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/wp-content/uploads/2020/06/logo_transparent.png"
-          alt={siteName}
-          className="h-10 w-auto flex-shrink-0"
-        />
+        <Link href="/" title="Back to main site">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/wp-content/uploads/2020/06/logo_transparent.png"
+            alt={siteName}
+            className="h-10 w-auto flex-shrink-0"
+          />
+        </Link>
       </div>
 
       {/* Navigation */}

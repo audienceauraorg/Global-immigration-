@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Users, FolderOpen, Settings, LogOut, Globe, Bell, CalendarCheck } from 'lucide-react'
+import { LayoutDashboard, Users, FolderOpen, Settings, LogOut, Bell, CalendarCheck } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { signOut } from '@/lib/actions/auth'
 
@@ -20,16 +20,15 @@ export function Sidebar() {
   return (
     <aside className="fixed inset-y-0 left-0 z-50 w-64 bg-navy flex flex-col">
       {/* Logo */}
-      <div className="px-6 py-6 border-b border-white/10">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-gold flex items-center justify-center flex-shrink-0">
-            <Globe className="w-5 h-5 text-navy" />
-          </div>
-          <div>
-            <p className="text-white font-bold text-sm leading-tight">Global Immigration</p>
-            <p className="text-gold text-xs font-medium">Hub</p>
-          </div>
-        </div>
+      <div className="px-6 py-5 border-b border-white/10">
+        <Link href="/" title="Back to main site">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/wp-content/uploads/2020/06/logo_transparent.png"
+            alt="Global Immigration Hub"
+            className="h-10 w-auto"
+          />
+        </Link>
       </div>
 
       {/* Nav */}

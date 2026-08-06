@@ -43,23 +43,14 @@ export default async function DashboardLayout({ children }: { children: React.Re
             borderBottom: '1px solid rgba(255,255,255,0.07)',
           }}
         >
-          <div className="flex items-center gap-2.5">
-            <div
-              className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg,#C9A84C,#e8c76a)' }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0B1C3A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-            </div>
-            <div>
-              <p className="text-white text-[12px] font-bold leading-tight">{siteName}</p>
-              <p className="text-[9px] font-bold tracking-[0.12em] uppercase" style={{ color: '#C9A84C' }}>
-                Client Portal
-              </p>
-            </div>
-          </div>
+          <a href="/" title="Back to main site">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/wp-content/uploads/2020/06/logo_transparent.png"
+              alt={siteName}
+              className="h-8 w-auto"
+            />
+          </a>
           {/* User avatar chip */}
           <div className="flex items-center gap-2">
             <div
