@@ -18,8 +18,16 @@ export default function MessengerButton() {
   const [name, setName] = useState('')
   const [inquiry, setInquiry] = useState('')
 
-  function handleChat(e: React.FormEvent) {
+  async function handleChat(e: React.FormEvent) {
     e.preventDefault()
+
+    // Send email notification to admin (fire and forget)
+    fetch('/api/chat-inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, inquiry, source: 'messenger' }),
+    }).catch(() => {})
+
     window.open(MESSENGER_URL, '_blank', 'noopener,noreferrer')
     setOpen(false)
     setName('')

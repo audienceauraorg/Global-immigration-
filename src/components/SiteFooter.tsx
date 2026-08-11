@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Globe, Mail, ExternalLink } from 'lucide-react'
 import { getSiteSettings } from '@/lib/settings'
+import { auth } from '@/auth'
 
 const programs = [
   { label: 'SINP – Occupations In-Demand', href: '/#programs' },
@@ -11,20 +12,22 @@ const programs = [
   { label: 'Study Permits', href: '/#programs' },
 ]
 
-const quickLinks = [
+const staticQuickLinks = [
   { label: 'Individuals', href: '/#programs' },
   { label: 'Employers', href: '/#employers' },
   { label: 'Services', href: '/#services' },
   { label: 'Fee Schedule', href: '/fees' },
   { label: 'Our Team', href: '/#team' },
   { label: 'Contact Us', href: '/#contact' },
-  { label: 'Client Portal', href: '/login' },
-  { label: 'Enroll Now', href: '/signup' },
   { label: 'Privacy Policy', href: '/privacy' },
 ]
 
 export default async function SiteFooter() {
-  const settings = await getSiteSettings()
+  const [settings, session] = await Promise.all([getSiteSettings(), auth()])
+
+  const isLoggedIn = !!session?.user
+  const role = session?.user?.role ?? 'client'
+  const dashboardHref = role === 'client' ? '/dashboard' : '/admin/dashboard'
 
   const siteName     = settings?.siteName ?? 'Global Immigration Hub'
   const siteTagline  = settings?.siteTagline ?? 'Your trusted immigration partner'
@@ -86,7 +89,7 @@ export default async function SiteFooter() {
         <div>
           <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
           <ul className="space-y-2.5">
-            {quickLinks.map(l => (
+            {staticQuickLinks.map(l => (
               <li key={l.label}>
                 <Link
                   href={l.href}
@@ -96,6 +99,21 @@ export default async function SiteFooter() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href={isLoggedIn ? dashboardHref : '/login'}
+                className="text-white/50 text-sm hover:text-gold transition-colors"
+              >
+                {isLoggedIn ? 'My Dashboard' : 'Client Portal'}
+              </Link>
+            </li>
+            {!isLoggedIn && (
+              <li>
+                <Link href="/signup" className="text-white/50 text-sm hover:text-gold transition-colors">
+                  Enroll Now
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
 
@@ -158,11 +176,11 @@ export default async function SiteFooter() {
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
             <Link
-              href="/signup"
+              href={isLoggedIn ? dashboardHref : '/signup'}
               className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg font-semibold text-navy transition-all hover:opacity-90"
               style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)', fontSize: '11px' }}
             >
-              Enroll Now →
+              {isLoggedIn ? 'Dashboard →' : 'Enroll Now →'}
             </Link>
           </div>
         </div>

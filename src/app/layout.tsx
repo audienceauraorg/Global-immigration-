@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Poppins, Quicksand } from 'next/font/google'
 import { Toaster } from 'sonner'
 import MessengerButton from '@/components/MessengerButton'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import SiteEntryPopup from '@/components/SiteEntryPopup'
 import './globals.css'
 
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             },
           }}
         />
+        <WhatsAppButton />
         <MessengerButton />
         <SiteEntryPopup />
       </body>

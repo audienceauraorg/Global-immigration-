@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import { ArrowRight, MapPin, Globe, Briefcase, Heart, GraduationCap, ChevronRight } from 'lucide-react'
+import { auth } from '@/auth'
 
 const programs = [
   {
@@ -40,7 +41,11 @@ const programs = [
   },
 ]
 
-export default function IndividualsPage() {
+export default async function IndividualsPage() {
+  const session = await auth()
+  const isLoggedIn = !!session?.user
+  const dashboardHref = session?.user?.role === 'client' ? '/dashboard' : '/admin/dashboard'
+
   return (
     <>
       <PageHero
@@ -80,11 +85,11 @@ export default function IndividualsPage() {
                 The end result will be an application that is accurate, on time, and will get you great results.
               </p>
               <Link
-                href="/signup"
+                href={isLoggedIn ? dashboardHref : '/signup'}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-navy transition-all hover:opacity-90"
                 style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)' }}
               >
-                Start Your Application
+                {isLoggedIn ? 'Go to My Dashboard' : 'Start Your Application'}
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -104,11 +109,11 @@ export default function IndividualsPage() {
                   recommend the best pathway.
                 </p>
                 <Link
-                  href="/signup"
+                  href={isLoggedIn ? dashboardHref : '/signup'}
                   className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl text-sm font-bold text-navy transition-all hover:opacity-90 mb-3"
                   style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)' }}
                 >
-                  Enroll Now
+                  {isLoggedIn ? 'My Dashboard' : 'Enroll Now'}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link

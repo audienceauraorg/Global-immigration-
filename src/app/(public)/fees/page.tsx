@@ -9,6 +9,7 @@ import {
   fmt,
   type ProgramKey,
 } from '@/lib/fees'
+import { auth } from '@/auth'
 
 export const metadata = {
   title: 'Fee Schedule | Global Immigration Hub',
@@ -16,7 +17,11 @@ export const metadata = {
     'Transparent pricing for every Canadian immigration program — official IRCC government fees, agency service fees, and consultation pricing.',
 }
 
-export default function FeesPage() {
+export default async function FeesPage() {
+  const session = await auth()
+  const isLoggedIn = !!session?.user
+  const dashboardHref = session?.user?.role === 'client' ? '/dashboard' : '/admin/dashboard'
+
   return (
     <div>
       {/* ── Hero ───────────────────────────────────────────────── */}
@@ -40,11 +45,11 @@ export default function FeesPage() {
             Book a Consultation →
           </Link>
           <Link
-            href="/signup"
+            href={isLoggedIn ? dashboardHref : '/signup'}
             className="px-6 py-3 rounded-xl text-sm font-bold border transition-colors"
             style={{ borderColor: 'rgba(201,168,76,0.4)', color: '#C9A84C' }}
           >
-            Enroll Now
+            {isLoggedIn ? 'My Dashboard' : 'Enroll Now'}
           </Link>
         </div>
       </section>
@@ -255,11 +260,11 @@ export default function FeesPage() {
               Book a Consultation →
             </Link>
             <Link
-              href="/signup"
+              href={isLoggedIn ? dashboardHref : '/signup'}
               className="px-7 py-3.5 rounded-xl text-sm font-bold border transition-colors"
               style={{ borderColor: 'rgba(255,255,255,0.25)', color: 'rgba(255,255,255,0.8)' }}
             >
-              Enroll Now
+              {isLoggedIn ? 'My Dashboard' : 'Enroll Now'}
             </Link>
           </div>
         </section>

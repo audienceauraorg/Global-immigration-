@@ -6,6 +6,7 @@ import {
   Html,
   Img,
   Preview,
+  Section,
   Text,
 } from '@react-email/components'
 
@@ -67,7 +68,9 @@ export function DocumentSubmittedEmail({
               Open the client&apos;s case in the admin dashboard to review, approve, or reject the
               submission.
             </Text>
-            <Button href={adminUrl} style={button}>Go to Admin Dashboard</Button>
+            <Section style={{ textAlign: 'center' as const, marginTop: '8px' }}>
+              <Button href={adminUrl} style={button}>Go to Admin Dashboard</Button>
+            </Section>
           </div>
 
           <div style={footer}>

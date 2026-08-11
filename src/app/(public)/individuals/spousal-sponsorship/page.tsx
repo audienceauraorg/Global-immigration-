@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import { ArrowRight, CheckCircle, Heart } from 'lucide-react'
+import { auth } from '@/auth'
 
 const eligibilityItems = [
   'The person you want to sponsor is a member of the family class.',
@@ -26,7 +27,11 @@ const partnerTypes = [
   },
 ]
 
-export default function SpousalSponsorshipPage() {
+export default async function SpousalSponsorshipPage() {
+  const session = await auth()
+  const isLoggedIn = !!session?.user
+  const dashboardHref = session?.user?.role === 'client' ? '/dashboard' : '/admin/dashboard'
+
   return (
     <>
       <PageHero
@@ -127,11 +132,11 @@ export default function SpousalSponsorshipPage() {
                   Our team handles every form, document, and deadline so you can focus on what matters — being together.
                 </p>
                 <Link
-                  href="/signup"
+                  href={isLoggedIn ? dashboardHref : '/signup'}
                   className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl text-sm font-bold text-navy transition-all hover:opacity-90 mb-3"
                   style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)' }}
                 >
-                  Start My Application
+                  {isLoggedIn ? 'My Dashboard' : 'Start My Application'}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link

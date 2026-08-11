@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import { ArrowRight, CheckCircle, Briefcase, Globe, Zap } from 'lucide-react'
+import { auth } from '@/auth'
 
 const subcategories = [
   {
@@ -38,7 +39,11 @@ const subcategories = [
   },
 ]
 
-export default function InternationalSkilledWorkerPage() {
+export default async function InternationalSkilledWorkerPage() {
+  const session = await auth()
+  const isLoggedIn = !!session?.user
+  const dashboardHref = session?.user?.role === 'client' ? '/dashboard' : '/admin/dashboard'
+
   return (
     <>
       <PageHero
@@ -113,10 +118,10 @@ export default function InternationalSkilledWorkerPage() {
                   identify which sub-category gives you the best chance of success.
                 </p>
                 <Link
-                  href="/signup"
+                  href={isLoggedIn ? dashboardHref : '/signup'}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:opacity-80 transition-opacity"
                 >
-                  Start a free assessment
+                  {isLoggedIn ? 'Go to My Dashboard' : 'Start a free assessment'}
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -136,11 +141,11 @@ export default function InternationalSkilledWorkerPage() {
                   Create your client account and we&apos;ll assess which sub-category best fits your profile.
                 </p>
                 <Link
-                  href="/signup"
+                  href={isLoggedIn ? dashboardHref : '/signup'}
                   className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl text-sm font-bold text-navy transition-all hover:opacity-90 mb-3"
                   style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)' }}
                 >
-                  Start My Application
+                  {isLoggedIn ? 'My Dashboard' : 'Start My Application'}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link

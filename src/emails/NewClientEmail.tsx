@@ -6,6 +6,7 @@ import {
   Html,
   Img,
   Preview,
+  Section,
   Text,
 } from '@react-email/components'
 
@@ -70,7 +71,9 @@ export function NewClientEmail({
                 the document collection process.
               </Text>
             )}
-            <Button href={adminUrl} style={button}>View Client in Dashboard</Button>
+            <Section style={{ textAlign: 'center' as const, marginTop: '8px' }}>
+              <Button href={adminUrl} style={button}>View Client in Dashboard</Button>
+            </Section>
           </div>
 
           <div style={footer}>

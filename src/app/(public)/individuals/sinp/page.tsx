@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import { ArrowRight, CheckCircle } from 'lucide-react'
+import { auth } from '@/auth'
 
-export default function SINPPage() {
+export default async function SINPPage() {
+  const session = await auth()
+  const isLoggedIn = !!session?.user
+  const dashboardHref = session?.user?.role === 'client' ? '/dashboard' : '/admin/dashboard'
+
   return (
     <>
       <PageHero
@@ -123,11 +128,11 @@ export default function SINPPage() {
                   process.
                 </p>
                 <Link
-                  href="/signup"
+                  href={isLoggedIn ? dashboardHref : '/signup'}
                   className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl text-sm font-bold text-navy transition-all hover:opacity-90 mb-3"
                   style={{ background: 'linear-gradient(135deg, #C9A84C, #e8c76a)' }}
                 >
-                  Start My Application
+                  {isLoggedIn ? 'My Dashboard' : 'Start My Application'}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
