@@ -11,6 +11,7 @@ const NEXT_PREFIXES = [
   '/dashboard',
   '/admin',
   '/fees',
+  '/individuals',
   '/favicon.ico',
 ]
 
@@ -46,7 +47,9 @@ export async function proxy(request: NextRequest) {
     pathname.startsWith('/login') ||
     pathname.startsWith('/signup') ||
     pathname.startsWith('/api/') ||
-    pathname.startsWith('/unauthorized')
+    pathname.startsWith('/unauthorized') ||
+    pathname.startsWith('/fees') ||
+    pathname.startsWith('/individuals')
   ) {
     return NextResponse.next()
   }
