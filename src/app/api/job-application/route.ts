@@ -48,6 +48,9 @@ export async function POST(req: NextRequest) {
     </td></tr></table>
   </td></tr>
   <tr><td style="background:#f8fafc;padding:18px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e2e8f0;text-align:center;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:12px;"><tr><td align="center">
+      <a href="https://wa.me/12368799173" style="display:inline-block;background:#25D366;color:#fff;font-family:'Poppins',Arial,sans-serif;font-size:12px;font-weight:600;text-decoration:none;padding:7px 16px;border-radius:20px;">WhatsApp: +1 (236) 879-9173</a>
+    </td></tr></table>
     <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:11px;color:#94a3b8;">${siteName} &nbsp;&middot;&nbsp; Job interest notification</p>
   </td></tr>
 </table>

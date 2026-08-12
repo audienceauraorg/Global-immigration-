@@ -97,6 +97,11 @@ export function DocumentStatusEmail({
           </div>
 
           <div style={footer}>
+            <div style={{ marginBottom: '10px' }}>
+              <a href="https://wa.me/12368799173" style={waButton}>
+                WhatsApp: +1 (236) 879-9173
+              </a>
+            </div>
             <Text style={footerMeta}>
               Automated message from {siteName} &nbsp;&middot;&nbsp; Contact your consultant for questions
             </Text>
@@ -216,4 +221,16 @@ const footerMeta: React.CSSProperties = {
   fontSize: '11px',
   color: '#94a3b8',
   margin: 0,
+}
+
+const waButton: React.CSSProperties = {
+  display: 'inline-block',
+  backgroundColor: '#25D366',
+  color: '#ffffff',
+  borderRadius: '20px',
+  padding: '7px 16px',
+  fontFamily: "'Poppins', Arial, sans-serif",
+  fontSize: '12px',
+  fontWeight: 600,
+  textDecoration: 'none',
 }

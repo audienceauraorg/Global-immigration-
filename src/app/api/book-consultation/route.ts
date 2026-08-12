@@ -157,6 +157,9 @@ export async function POST(req: NextRequest) {
 
   <tr>
     <td style="background:#f8fafc;padding:18px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e2e8f0;text-align:center;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:12px;"><tr><td align="center">
+        <a href="https://wa.me/12368799173" style="display:inline-block;background:#25D366;color:#fff;font-family:'Poppins',Arial,sans-serif;font-size:12px;font-weight:600;text-decoration:none;padding:7px 16px;border-radius:20px;">WhatsApp: +1 (236) 879-9173</a>
+      </td></tr></table>
       <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:11px;color:#94a3b8;">Booking ID: ${booking._id} &nbsp;&middot;&nbsp; ${siteName}</p>
     </td>
   </tr>
@@ -261,6 +264,9 @@ export async function POST(req: NextRequest) {
 
   <tr>
     <td style="background:#f8fafc;padding:20px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e2e8f0;text-align:center;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:12px;"><tr><td align="center">
+        <a href="https://wa.me/12368799173" style="display:inline-block;background:#25D366;color:#fff;font-family:'Poppins',Arial,sans-serif;font-size:12px;font-weight:600;text-decoration:none;padding:7px 16px;border-radius:20px;">WhatsApp: +1 (236) 879-9173</a>
+      </td></tr></table>
       <p style="margin:0 0 4px;font-family:'Poppins',Arial,sans-serif;font-size:12px;color:#64748b;">Questions? Reply to this email or write to <a href="mailto:${adminEmails[0]}" style="color:#0B1C3A;text-decoration:none;font-weight:500;">${adminEmails[0]}</a></p>
       <p style="margin:0;font-family:'Poppins',Arial,sans-serif;font-size:11px;color:#94a3b8;">&copy; ${new Date().getFullYear()} ${siteName} &nbsp;&middot;&nbsp; All rights reserved</p>
     </td>
