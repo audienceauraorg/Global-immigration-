@@ -41,7 +41,7 @@ export default function MessengerButton() {
         <div style={{
           position: 'fixed',
           bottom: '92px',
-          right: '16px',
+          left: '16px',
           zIndex: 9998,
           width: '300px',
           background: '#fff',
@@ -156,7 +156,7 @@ export default function MessengerButton() {
         onClick={() => setOpen(o => !o)}
         aria-label={open ? 'Close' : 'Chat with us on Messenger'}
         style={{
-          position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999,
+          position: 'fixed', bottom: '24px', left: '24px', zIndex: 9999,
           width: '56px', height: '56px', borderRadius: '50%',
           background: 'linear-gradient(135deg,#0084ff,#00c6ff)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
